@@ -1,0 +1,40 @@
+{
+  "name": "smp-core-schema",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Core schema entity for the Services Market Place",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha './tests/**/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylorion/smp-core-schema.git"
+  },
+  "keywords": [
+    "core",
+    "smp",
+    "services",
+    "schema",
+    "model",
+    "entity",
+    "utils"
+  ],
+  "author": "Sylorion SAS",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sylorion/smp-core-schema/issues"
+  },
+  "homepage": "https://github.com/sylorion/smp-core-schema#readme",
+  "dependencies": {
+    "pg": "^8.11.3",
+    "sequelize": "^6.35.1",
+    "slugify": "^1.6.6",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0",
+    "winston-logstash-transport": "^2.0.0"
+  }
+}

@@ -12,6 +12,15 @@ export default (db) => {
             autoIncrement: true,
             allowNull: false
         }, 
+        authorID: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            // ForeignKey relation is established here
+            references: {
+                model: 'User', // Assuming the user table is defined as 'User'
+                key: 'userID'
+            }
+        },
         topicID: { 
             type: DataTypes.INTEGER,
             allowNull: true  // Associated to a specific topic ?
@@ -25,7 +34,7 @@ export default (db) => {
             allowNull: true
         },
         question: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING(250),
             allowNull: false
         },
     },

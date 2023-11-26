@@ -23,6 +23,7 @@ export default (db) => {
       type: DataTypes.INTEGER,
       allowNull: true 
     },
+    // If we want to clone an answer and provide more details
     parentFaqAnswerID: {
       type: DataTypes.INTEGER,
       allowNull: true 
@@ -31,9 +32,6 @@ export default (db) => {
       type: DataTypes.STRING(8),
       allowNull: true 
     },
-    description: DataTypes.TEXT,
-    question: DataTypes.TEXT,
-    answer: DataTypes.TEXT,
   },
   {
     sequelize: db,

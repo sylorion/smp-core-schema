@@ -16,6 +16,10 @@ export default (db) => {
             type: DataTypes.INTEGER,
             allowNull: false
         },
+        order: {
+            type: DataTypes.INTEGER,
+            defaultValue: 0
+        },
         faqAnswerID: {
             type: DataTypes.INTEGER,
             allowNull: false

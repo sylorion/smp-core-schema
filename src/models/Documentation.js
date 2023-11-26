@@ -11,16 +11,6 @@ export default (db) => {
             autoIncrement: true,
             allowNull: false
         },
-        uniqRef: {
-            type: DataTypes.STRING(36),
-            allowNull: false,
-            unique: true
-        },
-        slug: {
-            type: DataTypes.STRING(255),
-            allowNull: false,
-            unique: true
-        },
         authorID: {
             type: DataTypes.INTEGER,
             allowNull: false,

@@ -1,3 +1,4 @@
+'use strict';
 // src/models/Profile.js
 // Use ES6 exporter to the outer and not CommonJS
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
@@ -6,9 +7,11 @@ import { DataTypes, Model } from 'sequelize'
 import ProfileGender from '../enums/ProfileGender.js'; 
 
 export default (db) => {
+
   class Profile extends BaseEntityMixin(Model) { }
 
-  Profile.init({
+  Profile.init(
+    {
     profileID: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -38,4 +41,6 @@ export default (db) => {
     timestamps: true,
     paranoid: true, // This enables soft deletes
   });
+
+  return Profile
 }

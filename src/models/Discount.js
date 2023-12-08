@@ -5,7 +5,8 @@ import { DataTypes, Model } from 'sequelize'
 export default (db) => {
   class Discount extends BaseEntityMixin(Model) { };
 
-  Discount.init({
+  Discount.init(db, DataTypes, 
+    {
     discountID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

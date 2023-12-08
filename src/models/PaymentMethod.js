@@ -7,7 +7,8 @@ import PaymentMethodType from '../enums/PaymentMethodType.js';
 
 export default (db) => {
   class PaymentMethod extends BaseEntityMixin(Model) { }
-  PaymentMethod.init({
+  PaymentMethod.init(db, DataTypes, 
+    {
     paymentMethodID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

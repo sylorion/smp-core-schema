@@ -6,7 +6,8 @@ import { DataTypes, Model } from 'sequelize'
 export default (db) => {
     class Notifications extends BaseEntityMixin(Model) { };
 
-    Notifications.init({
+    Notifications.init(db, DataTypes, 
+        {
         notificationID: {
             type: DataTypes.INTEGER,
             primaryKey: true,

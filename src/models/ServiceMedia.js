@@ -8,7 +8,8 @@ export default (db) => {
 
   class ServiceMedia extends BaseEntityMixin(Model) { }
 
-  ServiceMedia.init({
+  ServiceMedia.init(db, DataTypes, 
+  {
     serviceMediaID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

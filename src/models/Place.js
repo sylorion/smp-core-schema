@@ -8,7 +8,8 @@ import PlaceKind from '../enums/PlaceKind.js' ;
 export default (db) => {
   class Place extends BaseEntityMixin(Model) { }
 
-  Place.init({
+  Place.init(db, DataTypes, 
+    {
     placeID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

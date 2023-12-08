@@ -10,7 +10,7 @@ export default (db) => {
 
   class Profile extends BaseEntityMixin(Model) { }
 
-  Profile.init(
+  Profile.init(db, DataTypes,
     {
     profileID: {
       type: DataTypes.INTEGER,

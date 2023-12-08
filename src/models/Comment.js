@@ -4,7 +4,7 @@ import { DataTypes, Model } from 'sequelize'
 
 export default (db) => {
   class Comment extends BaseEntityMixin(Model) { };
-  Comment.init(
+  Comment.init(db, DataTypes,
   {
     commentID: {
       type: DataTypes.INTEGER,

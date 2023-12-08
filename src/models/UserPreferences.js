@@ -10,7 +10,8 @@ export default (db) => {
 
   class UserPreferences extends BaseEntityMixin(Model) { };
 
-  UserPreferences.init({
+  UserPreferences.init(db, DataTypes, 
+  {
     preferenceID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

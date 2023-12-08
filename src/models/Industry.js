@@ -6,7 +6,8 @@ import { DataTypes, Model } from 'sequelize'
 export default (db) => {
     class Industry extends BaseEntityMixin(Model) { };
 
-    Industry.init({
+    Industry.init(db, DataTypes, 
+        {
         industryID: {
             type: DataTypes.INTEGER,
             primaryKey: true,

@@ -5,7 +5,8 @@ import { DataTypes, Model } from 'sequelize'
 export default (db) => {
     class FaqQuestion extends BaseEntityMixin(Model) { };
 
-    FaqQuestion.init({
+    FaqQuestion.init(db, DataTypes, 
+        {
         faqQuestionID: {
             type: DataTypes.INTEGER,
             primaryKey: true,

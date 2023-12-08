@@ -8,7 +8,8 @@ export default (db) => {
 
   class Role extends BaseEntityMixin(Model) { }
 
-  Role.init({
+  Role.init(db, DataTypes, 
+    {
     roleID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

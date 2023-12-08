@@ -4,7 +4,9 @@ import { DataTypes, Model } from 'sequelize'
 
 export default (db) => {
     class Documentation extends BaseEntityMixin(Model) { };
-    Documentation.init({
+    
+    Documentation.init(db, DataTypes, 
+        {
         documentID: {
             type: DataTypes.INTEGER,
             primaryKey: true,

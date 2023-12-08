@@ -8,7 +8,8 @@ export default (db) => {
 
   class TermsAndConditions extends BaseEntityMixin(Model) { }
 
-  TermsAndConditions.init({
+  TermsAndConditions.init(db, DataTypes, 
+  {
     termsAndConditionsID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

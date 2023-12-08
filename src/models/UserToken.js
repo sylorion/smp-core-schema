@@ -8,7 +8,8 @@ export default (db) => {
 
   class UserToken extends Model {};
 
-  UserToken.init({
+  UserToken.init(db, DataTypes, 
+  {
     userTokenID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

@@ -8,7 +8,8 @@ export default (db) => {
 
     class Follow extends BaseEntityMixin(Model) { };
 
-    Follow.init({
+    Follow.init(db, DataTypes, 
+        {
         follwID: {
             type: DataTypes.INTEGER,
             primaryKey: true,

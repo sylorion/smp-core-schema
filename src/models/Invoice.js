@@ -9,7 +9,8 @@ export default (db) => {
 
   class Invoice extends BaseEntityMixin(Model) { };
 
-  Invoice.init({
+  Invoice.init(db, DataTypes, 
+    {
     invoiceID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

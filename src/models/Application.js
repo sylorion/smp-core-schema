@@ -4,7 +4,7 @@ import { DataTypes, Model } from 'sequelize'
 
 export default (db) => {
   class Application extends BaseEntityMixin(Model) { };
-  Application.init(
+  Application.init(db, DataTypes,
   {
     applicationID: {
       type: DataTypes.INTEGER,

@@ -8,7 +8,8 @@ export default (db) => {
 
   class ServiceAttribute extends BaseEntityMixin(Model) { }
 
-  ServiceAttribute.init({
+  ServiceAttribute.init(db, DataTypes, 
+  {
     attributeID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

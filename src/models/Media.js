@@ -9,7 +9,8 @@ export default (db) => {
 
   class Media extends BaseEntityMixin(Model) { };
 
-  Media.init({
+  Media.init(db, DataTypes, 
+    {
     mediaID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

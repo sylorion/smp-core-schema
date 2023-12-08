@@ -4,7 +4,8 @@ import { DataTypes, Model } from 'sequelize'
 
 export default (db) => {
   class AuditLog extends BaseEntityMixin(Model) { };
-  AuditLog.init({
+  AuditLog.init(db, DataTypes, 
+    {
     auditLogID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

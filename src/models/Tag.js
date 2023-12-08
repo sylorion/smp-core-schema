@@ -8,7 +8,8 @@ export default (db) => {
 
   class Tag extends BaseEntityMixin(Model) { }
 
-  Tag.init({
+  Tag.init(db, DataTypes, 
+  {
     tagID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

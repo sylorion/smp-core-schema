@@ -10,7 +10,8 @@ import ServiceBillingPlan from '../enums/ServiceBillingPlan.js';
 export default (db) => {
 
   class Service extends BaseEntityMixin(Model) { }
-  Service.init({
+  Service.init(db, DataTypes, 
+    {
     serviceID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

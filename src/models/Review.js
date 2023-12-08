@@ -8,7 +8,8 @@ export default (db) => {
 
   class Review extends BaseEntityMixin(Model) { }
 
-  Review.init({
+  Review.init(db, DataTypes, 
+    {
     reviewID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

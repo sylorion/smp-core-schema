@@ -8,7 +8,8 @@ export default (db) => {
 
   class Transaction extends BaseEntityMixin(Model) {}
 
-  Transaction.init({
+  Transaction.init(db, DataTypes, 
+  {
     transactionID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

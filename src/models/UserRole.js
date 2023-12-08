@@ -8,7 +8,8 @@ export default (db) => {
 
   class UserRole extends BaseEntityMixin(Model) { };
 
-  UserRole.init({
+  UserRole.init(db, DataTypes, 
+  {
     userRoleID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

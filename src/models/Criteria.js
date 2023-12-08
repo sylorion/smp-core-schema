@@ -4,7 +4,8 @@ import { DataTypes, Model } from 'sequelize'
 
 export default (db) => {
   class Criteria extends BaseEntityMixin(Model) { };
-  Criteria.init({
+  Criteria.init(db, DataTypes, 
+    {
     criteriaID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

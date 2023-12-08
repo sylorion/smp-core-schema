@@ -8,7 +8,7 @@ export default (db) => {
 
   class ServiceAsset extends BaseEntityMixin(Model) { }
 
-  ServiceAsset.init(
+  ServiceAsset.init(db, DataTypes, 
   {
     serviceAssetID: {
       type: DataTypes.INTEGER,

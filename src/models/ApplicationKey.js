@@ -4,7 +4,8 @@ import { DataTypes, Model } from 'sequelize'
 
 export default (db) => {
   class ApplicationKey extends BaseEntityMixin(Model) { };
-  ApplicationKey.init({
+  ApplicationKey.init(db, DataTypes, 
+    {
     ApplicationKeyID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

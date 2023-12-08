@@ -6,7 +6,8 @@ import { DataTypes, Model } from 'sequelize'
 // Nothing
 export default (db) => {
   class OrganizationMedia extends BaseEntityMixin(Model) { }
-  OrganizationMedia.init({
+  OrganizationMedia.init(db, DataTypes, 
+    {
     organizationMediaID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

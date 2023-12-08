@@ -7,7 +7,9 @@ import { DataTypes, Model } from 'sequelize'
 export default (db) => {
 
   class UserOrganization extends BaseEntityMixin(Model) { };
-  UserOrganization.init({
+  
+  UserOrganization.init(db, DataTypes, 
+  {
     userOrganizationID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

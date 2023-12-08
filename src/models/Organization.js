@@ -9,7 +9,8 @@ import OrganizationEconomicSizeKind  from '../enums/OrganizationEconomicSizeKind
 export default (db) => {
   class Organization extends BaseEntityMixin(Model) { }
 
-  Organization.init({
+  Organization.init(db, DataTypes, 
+    {
     organizationID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

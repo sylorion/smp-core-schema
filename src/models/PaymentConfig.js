@@ -7,7 +7,8 @@ import { DataTypes, Model } from 'sequelize'
 export default (db) => {
   class PaymentConfig extends BaseEntityMixin(Model) { }
 
-  PaymentConfig.init({
+  PaymentConfig.init(db, DataTypes, 
+    {
     paymentConfigID: {
       type: DataTypes.INTEGER,
       primaryKey: true,

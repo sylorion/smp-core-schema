@@ -30,4 +30,5 @@ export default (db) => {
     tableName: 'ApplicationKey',
     timestamps: true,
   });
+  return ApplicationKey;
 }

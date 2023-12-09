@@ -59,7 +59,7 @@ export default (db) => {
       }
     }, {
     sequelize: db,
-    modelName: User,
+    modelName: 'User',
     tableName: 'User',
     timestamps: true,
     paranoid: true // This will add a "deletedAt" column and allow soft deletes

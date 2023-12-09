@@ -37,7 +37,7 @@ function BaseEntityMixin(GivenModel) {
         uuid(){
             return uuidv4();
         }
-        static init(sequelize, DataTypes, nextAttributes) {
+        static init(sequelize, DataTypes, nextAttributes, configs) {
             return super.init({
                 id: {
                     type: DataTypes.UUID,
@@ -65,7 +65,7 @@ function BaseEntityMixin(GivenModel) {
                 // createdAt: { type: DataTypes.DATE, allowNull: false },
                 // updatedAt: { type: DataTypes.DATE, allowNull: false },
                 // deletedAt: { type: DataTypes.DATE },
-            }, { sequelize });
+            }, configs);
         }
     };
 };

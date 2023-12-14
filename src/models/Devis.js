@@ -56,4 +56,6 @@ export default (db) => {
     timestamps: true,
     paranoid: true,
   });
+
+  return Devis;
 }

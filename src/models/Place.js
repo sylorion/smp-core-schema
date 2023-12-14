@@ -42,5 +42,5 @@ export default (db) => {
     timestamps: true,
     paranoid: true, // This enables soft deletes
   });
-
+return Place;
 }

@@ -66,4 +66,5 @@ export default (db) => {
     Documentation.belongsTo(db.models.User, { foreignKey: 'authorID' });
     Documentation.belongsTo(db.models.Service, { foreignKey: 'serviceID' });
     Documentation.belongsTo(db.models.Documentation, { foreignKey: 'parentDocumentationID' });
+    return Documentation;
 }

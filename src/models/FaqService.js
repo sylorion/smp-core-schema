@@ -41,4 +41,5 @@ export default (db) => {
         timestamps: true,
         paranoid: true // This will add a "deletedAt" column and allow soft deletes
     });
+    return FaqService;
 }

@@ -51,4 +51,5 @@ export default (db) => {
     tableName: 'UserToken',
     timestamps: true,
   });
+  return UserToken;
 }

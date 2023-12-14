@@ -1,8 +1,8 @@
-const TargetedEntityCriteria = {
+const CriteriaTargetedEntity = {
   SERVICE: 'service',
   USER: 'user',
   ORGANIZATION: 'organization',
   PLACE: 'place',
   APPLICATION: 'application',
 };
-export default TargetedEntityCriteria ;
+export default CriteriaTargetedEntity ;

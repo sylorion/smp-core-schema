@@ -35,12 +35,20 @@ export default (db) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    organizationrID: {
+    organizationID: {
       type: DataTypes.INTEGER,
       allowNull: true,
     },
-    tagID: {
+    topicID: {
       type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    serviceID: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    tagIDs: {
+      type: DataTypes.ARRAY(DataTypes.INTEGER),
       allowNull: true,
     },
   },

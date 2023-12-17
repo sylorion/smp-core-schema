@@ -18,20 +18,15 @@ export default (db) => {
     authorID: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: User,
-        key: 'userID',
+    
       },
-    },
+    
     title: DataTypes.STRING(255),
     description: DataTypes.TEXT,
     parentID: {
       type:DataTypes.INTEGER,
       allowNull: true,
-      references: {
-        model: Topic,
-        key: 'topicID',
-      },
+  
      },
     level: DataTypes.INTEGER,
   },

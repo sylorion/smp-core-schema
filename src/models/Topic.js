@@ -23,7 +23,7 @@ export default (db) => {
     
     title: DataTypes.STRING(255),
     description: DataTypes.TEXT,
-    parentID: {
+    parentTopicID: {
       type:DataTypes.INTEGER,
       allowNull: true,
   

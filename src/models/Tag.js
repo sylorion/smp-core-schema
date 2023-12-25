@@ -30,7 +30,7 @@ export default (db) => {
     modelName: 'Tag',
     tableName: 'Tag',
     timestamps: true,
-    paranoid: true,
+    paranoid: true, 
   });
 
   return Tag;

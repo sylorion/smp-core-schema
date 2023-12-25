@@ -23,9 +23,9 @@ export default (db) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    targetedEntityCriteria: {
-      type: DataTypes.ENUM(Object.values(TargetedEntityCriteria)),
-      defaultValue: TargetedEntityCriteria.SERVICE,
+    CriteriaTargetedEntity: {
+      type: DataTypes.ENUM(Object.values( )),
+      defaultValue: CriteriaTargetedEntity.SERVICE,
     }, 
   }, 
   {

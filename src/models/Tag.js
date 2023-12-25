@@ -24,7 +24,6 @@ export default (db) => {
       allowNull: false,
     },
     value: DataTypes.STRING(255),
-    description: DataTypes.TEXT, 
   },
   {
     sequelize: db,

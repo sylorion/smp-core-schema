@@ -39,6 +39,11 @@ function BaseEntityMixin(GivenModel) {
         }
         static init(sequelize, DataTypes, nextAttributes, configs) {
             return super.init({
+                uniqRef: {
+                    type: DataTypes.STRING(255),
+                    allowNull: false,
+                    unique: true,
+                },
                 slug: {
                     type: DataTypes.STRING(255),
                     allowNull: false,

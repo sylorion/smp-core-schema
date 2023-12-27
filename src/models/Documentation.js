@@ -62,9 +62,9 @@ export default (db) => {
             paranoid: true // This will add a "deletedAt" column and allow soft deletes
         });
 
-    // Establishing foreign key relationships
-    Documentation.belongsTo(db.models.User, { foreignKey: 'authorID' });
-    Documentation.belongsTo(db.models.Service, { foreignKey: 'serviceID' });
-    Documentation.belongsTo(db.models.Documentation, { foreignKey: 'parentDocumentationID' });
+    // // Establishing foreign key relationships
+    // Documentation.belongsTo(db.models.User, { foreignKey: 'authorID' });
+    // Documentation.belongsTo(db.models.Service, { foreignKey: 'serviceID' });
+    // Documentation.belongsTo(db.models.Documentation, { foreignKey: 'parentDocumentationID' });
     return Documentation;
 }

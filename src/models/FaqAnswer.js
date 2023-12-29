@@ -36,8 +36,8 @@ export default (db) => {
   },
   {
     sequelize: db,
-    modelName: 'FaqOrganization',
-    tableName: 'FaqOrganization',
+    modelName: 'FaqAnswer',
+    tableName: 'FaqAnswer',
     timestamps: true,
     paranoid: true
   });

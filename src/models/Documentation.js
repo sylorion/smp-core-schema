@@ -63,5 +63,6 @@ export default (db) => {
         });
 
    
-    return Documentation;
+     return Documentation;
 }
+  

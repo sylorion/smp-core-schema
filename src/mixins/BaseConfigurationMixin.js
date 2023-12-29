@@ -26,15 +26,15 @@ function BaseConfigurationMixin(GivenConfiguration) {
       punctuationStyle: 'standard' | 'minimal', // Preferred punctuation style
     },
     notificationsCommunication: {
-      notificationPreferedMode: 'email', // | 'push' | 'sms', // Preferred notification mode
-      notificationFrequency: 'immediate', // | 'daily' | 'weekly' | 'monthly' | 'never', // Frequency of notifications
-      allowPersonalMailChannelNotification: true,
-      allowBusinessMailChannelNotificiation: true,
-      allowMobileCallChannelNotification: true,
-      allowMobileSMSChannelNotification: true,
-      allowMobileAppPushChannelNotification: true,
-      allowMobileAppPopUpChannelNotification: true,
-      allowInboxChannelNotification: true,
+      channalMode: 'email', // | 'push' | 'sms', // Preferred notification mode
+      frequency: 'immediate', // | 'daily' | 'weekly' | 'monthly' | 'never', // Frequency of notifications
+      allowPersonalMailChannel: true,
+      allowBusinessMailChannel: true,
+      allowMobileCallChannel: true,
+      allowMobileSMSChannel: true,
+      allowMobileAppPushChannel: true,
+      allowMobileAppPopUpChannel: true,
+      allowInboxChannel: true,
       allowDirectMessage: true,
       allowGroupMessage: true,
       allowTeamMessage: true,

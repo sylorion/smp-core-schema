@@ -3,49 +3,45 @@
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 // Importing enums 
-import ServicesAcceptedDevice    from '../enums/ServicesAcceptedDevice.js';
+import ServicesAcceptedDevice from '../enums/ServicesAcceptedDevice.js';
 import NotificationFrequencyPref from '../enums/NotificationFrequencyPref.js';
 
 export default (db) => {
 
   class UserPreferences extends BaseEntityMixin(Model) { };
 
-  UserPreferences.init(db, DataTypes, 
-  {
-    preferenceID: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
+  UserPreferences.init(db, DataTypes,
+    {
+      preferenceID: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+      userID: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+      lang: DataTypes.STRING(16),
+      timeZone: DataTypes.STRING(64),
+      notificationPreferences: DataTypes.TEXT,
+      privacySettings: DataTypes.TEXT,
+      theme: DataTypes.INTEGER,
+      marketplaceConfig: DataTypes.TEXT,
+      defaultCurrency: {
+        type: DataTypes.ENUM(Object.values(ServicesAcceptedDevice)),
+        defaultValue: ServicesAcceptedDevice.EUR,
+      },
+      defaultPaymentMethodID: DataTypes.INTEGER,
+      notificationFrequency: DataTypes.STRING(32),
+      showRecommendations: DataTypes.BOOLEAN,
+      otherSettings: DataTypes.TEXT,
     },
-    userID: {
-      type: DataTypes.INTEGER,
-      allowNull: false, 
-    },
-    lang: DataTypes.STRING(16),
-    timeZone: DataTypes.STRING(64),
-    notificationPreferences: DataTypes.TEXT,
-    privacySettings: DataTypes.TEXT,
-    theme: DataTypes.INTEGER,
-    marketplaceConfig: DataTypes.TEXT,
-    defaultCurrency: {
-      type: DataTypes.ENUM(Object.values(ServicesAcceptedDevice)),
-      defaultValue: ServicesAcceptedDevice.EUR,
-    },
-    defaultPaymentMethodID: DataTypes.INTEGER,
-    notificationFrequency: DataTypes.STRING(32),
-    oSize: {
-      type: DataTypes.ENUM(Object.values(NotificationFrequencyPref)),
-      defaultValue: NotificationFrequencyPref.INSTANT,
-    },
-    showRecommendations: DataTypes.BOOLEAN,
-    otherSettings: DataTypes.TEXT, 
-  },
-  {
-    sequelize: db,
-    modelName: 'UserPreferences',
-    tableName: 'UserPreferences',
-    timestamps: true,
-    paranoid: true,
-  });
+    {
+      sequelize: db,
+      modelName: 'UserPreferences',
+      tableName: 'UserPreferences',
+      timestamps: true,
+      paranoid: true,
+    });
   return UserPreferences;
 }

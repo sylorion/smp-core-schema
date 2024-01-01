@@ -16,11 +16,7 @@ export default (db) => {
         authorID: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            // ForeignKey relation is established here
-            references: {
-                model: 'User', // Assuming the user table is defined as 'User'
-                key: 'userID'
-            }
+           
         },
         topicID: { 
             type: DataTypes.INTEGER,

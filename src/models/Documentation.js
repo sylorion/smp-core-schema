@@ -27,6 +27,11 @@ export default (db) => {
             type: DataTypes.STRING(64),
             allowNull: false
         },
+
+        organizationID: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
         level: {
             type: DataTypes.INTEGER,
             allowNull: false

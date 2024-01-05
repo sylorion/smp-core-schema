@@ -1,6 +1,7 @@
 // src/models/Criteria.js
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
+import CriteriaTargetedEntity from '../enums/UserType.js';
 
 export default (db) => {
   class Criteria extends BaseEntityMixin(Model) { };
@@ -24,7 +25,7 @@ export default (db) => {
       allowNull: false
     },
     CriteriaTargetedEntity: {
-      type: DataTypes.ENUM(Object.values( )),
+      type: DataTypes.ENUM(Object.values(CriteriaTargetedEntity)),
 
       defaultValue: CriteriaTargetedEntity.SERVICE,
     }, 

@@ -15,21 +15,13 @@ export default (db) => {
         },
         authorID: {
             type: DataTypes.INTEGER,
-            allowNull: false,
-            // ForeignKey relation is established here
-            references: {
-                model: 'User', // Assuming the user table is defined as 'User'
-                key: 'userID'
-            }
-        },
+            allowNull: false
+            },
+     
         serviceID: {
             type: DataTypes.INTEGER,
-            allowNull: false,
-            // ForeignKey relation is established here
-            references: {
-                model: 'Service', // Assuming the service table is defined as 'Service'
-                key: 'serviceID'
-            }
+            allowNull: true,
+            
         },
         title: {
             type: DataTypes.STRING(64),
@@ -47,11 +39,7 @@ export default (db) => {
         parentDocumentationID: {
             type: DataTypes.INTEGER,
             allowNull: true,
-            // ForeignKey relation is established here
-            references: {
-                model: 'Documentation',
-                key: 'documentationID'
-            }
+           
         },
     },
         {

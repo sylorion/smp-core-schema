@@ -20,7 +20,7 @@ export default (db) => {
         },
         topicID: { 
             type: DataTypes.INTEGER,
-            allowNull: true  // Associated to a specific topic ?
+            allowNull: true 
         },
         parentFaqQuestionID: {
             type: DataTypes.INTEGER,
@@ -40,7 +40,7 @@ export default (db) => {
         modelName: 'FaqQuestion',
         tableName: 'FaqQuestion',
         timestamps: true,
-        paranoid: true // This will add a "deletedAt" column and allow soft deletes
+        paranoid: true 
     });
     return FaqQuestion;
 }

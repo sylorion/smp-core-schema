@@ -21,8 +21,8 @@ export default (db) => {
         serviceID: {
             type: DataTypes.INTEGER,
             allowNull: true,
-            
         },
+            
         title: {
             type: DataTypes.STRING(64),
             allowNull: false
@@ -41,8 +41,7 @@ export default (db) => {
             allowNull: true,
            
         },
-    },
-        {
+    
             sequelize: db,
             modelName: 'Documentation',
             tableName: 'Documentation',

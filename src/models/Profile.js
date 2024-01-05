@@ -19,7 +19,10 @@ export default (db) => {
     },
     firstName: DataTypes.STRING(64),
     lastName: DataTypes.STRING(64),
-    dateOfBirth: DataTypes.DATE,
+    dateOfBirth: {
+      type: DataTypes.DATE,
+      allowNull: true, 
+    },
     gender: {
       type: DataTypes.ENUM(Object.values(ProfileGender)), // Assuming ProfileGender is an enum
       allowNull: true,

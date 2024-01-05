@@ -7,7 +7,7 @@ export default (db) => {
 
   FaqAnswer.init(db, DataTypes, 
     {
-    FaqAnswerID: {
+    faqAnswerID: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,

@@ -19,14 +19,10 @@ export default (db) => {
     },
     firstName: DataTypes.STRING(64),
     lastName: DataTypes.STRING(64),
-      dateOfBirth: {
-        type: DataTypes.DATE,
-        allowNull: true,
-        get() {
-          const date = this.getDataValue('date') ? moment(this.getDataValue('date')).format('DD/MM/YYYY') : null;
-          return date;
-        }
-      },
+    dateOfBirth: {
+      type: DataTypes.DATE,
+      allowNull: true, 
+    },
     gender: {
       type: DataTypes.ENUM(Object.values(ProfileGender)), // Assuming ProfileGender is an enum
       allowNull: true,

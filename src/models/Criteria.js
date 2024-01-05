@@ -17,7 +17,7 @@ export default (db) => {
     },
     title: {
       type: DataTypes.STRING(255),
-      alowNull: fase
+      alowNull: false
     },
     description: {
       type: DataTypes.TEXT,

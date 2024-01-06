@@ -10,7 +10,7 @@ export default (db) => {
 
   ServiceAttribute.init(db, DataTypes, 
   {
-    attributeID: {
+    serviceAttributeID: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,

@@ -39,7 +39,7 @@ export default (db) => {
     description: DataTypes.TEXT,
     price: DataTypes.INTEGER,
     legalVatPercent: DataTypes.INTEGER,
-    quantity: DataTypes.INTEGER,
+    stockQuantity: DataTypes.INTEGER,
     maxPerReservation: DataTypes.INTEGER,
     conflictingAssets: DataTypes.TEXT,
     applyableAssets: DataTypes.TEXT, 

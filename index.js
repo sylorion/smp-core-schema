@@ -2,7 +2,7 @@
 // ENUM 
 // To search from a path to import from a list of path : ([a-z\/-]*)/([a-zA-Z]*).js  with import $2 from '$0.js' ;
 import AuditLogActionType from './src/enums/AuditLogActionType.js';
-import DevisStage from './src/enums/DevisStage.js';
+import EstimateStage from './src/enums/EstimateStage.js';
 import FollowedEntityType from './src/enums/FollowedEntityType.js';
 import MediaType from './src/enums/MediaType.js';
 import NotificationFrequencyPref from './src/enums/NotificationFrequencyPref.js';
@@ -30,8 +30,8 @@ import modelAsset from './src/models/Asset.js';
 import modelAuditLog from './src/models/AuditLog.js';
 import modelComment from './src/models/Comment.js';
 import modelCriteria from './src/models/Criteria.js';
-import modelDevis from './src/models/Devis.js';
-import modelDevisAsset from './src/models/DevisAsset.js';
+import modelEstimate from './src/models/Estimate.js';
+import modelEstimateAsset from './src/models/EstimateAsset.js';
 import modelDiscount from './src/models/Discount.js';
 import modelDocumentation from './src/models/Documentation.js';
 import modelFaqAnswer from './src/models/FaqAnswer.js';
@@ -67,8 +67,8 @@ import modelUserToken from './src/models/UserToken.js';
 
 export {
     modelApplication, modelApplicationKey, modelAsset,
-    modelAuditLog, modelComment, modelCriteria, modelDevis,
-    modelDevisAsset, modelDiscount, modelDocumentation,
+    modelAuditLog, modelComment, modelCriteria, modelEstimate,
+    modelEstimateAsset, modelDiscount, modelDocumentation,
     modelFaqAnswer, modelFaqOrganization, modelFaqQuestion,
     modelFaqService, modelFollow, modelIndustry, modelInvoice,
     modelMedia, modelNotification, modelOrganization,
@@ -80,7 +80,7 @@ export {
     modelUser,
     modelUserOrganization, modelUserPreferences,
     modelUserRole, modelUserToken,
-    AuditLogActionType, DevisStage, FollowedEntityType,
+    AuditLogActionType, EstimateStage, FollowedEntityType,
     MediaType, NotificationFrequencyPref,
     ObjectStatus, OrganizationEconomicSizeKind,
     PaymentMethodType, PaymentStatus, PlaceKind,

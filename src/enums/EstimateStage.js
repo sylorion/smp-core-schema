@@ -1,4 +1,4 @@
-const DevisStage = {
+const EstimateStage = {
   SUBMITTED: 'submitted',
   PROCESSING: 'processing',
   NEGOCIATING: 'negociating',
@@ -8,4 +8,4 @@ const DevisStage = {
   SAVED: 'saved',
 };
 
-export default DevisStage ;
+export default EstimateStage ;

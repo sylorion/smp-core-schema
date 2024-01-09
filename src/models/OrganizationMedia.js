@@ -7,7 +7,7 @@ import { DataTypes, Model } from 'sequelize';
 export default (db) => {
   class OrganizationMedia extends BaseEntityMixin(Model) {}
 
-  OrganizationMedia.init(
+  OrganizationMedia.init(db, DataTypes,
     {
       organizationMediaID: {
         type: DataTypes.INTEGER,
@@ -35,8 +35,7 @@ export default (db) => {
       tableName: 'OrganizationMedia',
       timestamps: true,
       paranoid: true,
-    }
-  );
+    });
 
   return OrganizationMedia;
 };

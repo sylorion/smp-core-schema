@@ -9,7 +9,7 @@ export default (db) => {
     db,
     DataTypes,
     {
-      TopicOrganizationID: {
+      topicOrganizationID: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,

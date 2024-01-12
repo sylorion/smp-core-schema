@@ -65,6 +65,8 @@ import modelUserPreferences from './src/models/UserPreferences.js';
 import modelUserRole from './src/models/UserRole.js';
 import modelUserToken from './src/models/UserToken.js';
 import modelTagOrganization from './src/models/TagOrganization.js';
+import modelTopicOrganization from './src/models/TopicOrganization.js';
+
 
 
 
@@ -82,7 +84,7 @@ export {
     modelTermsAndConditions, modelTopic, modelTransaction,
     modelUser,
     modelUserOrganization, modelUserPreferences,
-    modelUserRole, modelUserToken,modelTagOrganization,
+    modelUserRole, modelUserToken,modelTagOrganization,modelTopicOrganization,
     AuditLogActionType, EstimateStage, FollowedEntityType,
     MediaType, NotificationFrequencyPref,
     ObjectStatus, OrganizationEconomicSizeKind,

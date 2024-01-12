@@ -9,7 +9,7 @@ export default (db) => {
     db,
     DataTypes,
     {
-      tagOrganization: {
+      tagOrganizationID: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -33,5 +33,6 @@ export default (db) => {
       paranoid: true,
     }
   );
+
    return TagOrganization;
 };

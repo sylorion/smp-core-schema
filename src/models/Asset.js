@@ -13,16 +13,7 @@ export default (db) => {
       primaryKey: true,
       autoIncrement: true,
     },
-    uniqRef: {
-      type: DataTypes.UUID,
-      unique: true,
-      allowNull: false,
-    },
-    slug: {
-      type: DataTypes.STRING(255),
-      unique: true,
-      allowNull: false,
-    },
+    
     title: DataTypes.STRING(64),
     authorID: {
       type: DataTypes.INTEGER,

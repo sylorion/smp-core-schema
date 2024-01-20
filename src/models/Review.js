@@ -32,9 +32,10 @@ export default (db) => {
       allowNull: false, 
     },
     rating: DataTypes.INTEGER,
+    
     commentID: {
       type: DataTypes.INTEGER,
-      allowNull: false, 
+      allowNull: true, 
     }, 
   },
   {

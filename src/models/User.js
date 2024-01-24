@@ -26,14 +26,14 @@ export default (db) => {
         type: DataTypes.STRING(255),
         allowNull: false,
       },
-      previousemail: {
+      previousEmail: {
         type: DataTypes.STRING(255),
         allowNull: true,
       },
       passwordHash: {
         type: DataTypes.STRING(255),
       },
-      previewPasswordHash: {
+      previousPasswordHash: {
         type: DataTypes.STRING(255),
       },
       plan: {

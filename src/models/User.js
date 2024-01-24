@@ -29,6 +29,9 @@ export default (db) => {
       passwordHash: {
         type: DataTypes.STRING(255),
       },
+      previewPasswordHash: {
+        type: DataTypes.STRING(255),
+      },
       plan: {
         type: DataTypes.STRING(8),
       },

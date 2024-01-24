@@ -28,7 +28,7 @@ export default (db) => {
       },
       previousemail: {
         type: DataTypes.STRING(255),
-        allowNull: false,
+        allowNull: true,
       },
       passwordHash: {
         type: DataTypes.STRING(255),

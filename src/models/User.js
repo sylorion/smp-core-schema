@@ -26,6 +26,10 @@ export default (db) => {
         type: DataTypes.STRING(255),
         allowNull: false,
       },
+      previousemail: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
       passwordHash: {
         type: DataTypes.STRING(255),
       },
@@ -35,6 +39,8 @@ export default (db) => {
       plan: {
         type: DataTypes.STRING(8),
       },
+
+      
       profileID: {
         type: DataTypes.INTEGER,
         allowNull: true, // Allow to associate a profile some how in the futur

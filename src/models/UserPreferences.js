@@ -20,6 +20,9 @@ export default (db) => {
       userID: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        unique: true,
+
+
       },
       lang: DataTypes.STRING(16),
       timeZone: DataTypes.STRING(64),

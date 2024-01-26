@@ -17,15 +17,18 @@ export default (db) => {
         primaryKey: true,
         autoIncrement: true,
       },
+
       username: {
         type: DataTypes.STRING(16),
         allowNull: false,
         unique: true,
       },
+
       email: {
         type: DataTypes.STRING(255),
         allowNull: false,
       },
+
       previousEmail: {
         type: DataTypes.STRING(255),
         allowNull: true,
@@ -40,7 +43,6 @@ export default (db) => {
         type: DataTypes.STRING(8),
       },
 
-      
       profileID: {
         type: DataTypes.INTEGER,
         allowNull: true, // Allow to associate a profile some how in the futur

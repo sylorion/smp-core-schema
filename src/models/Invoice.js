@@ -19,11 +19,8 @@ export default (db) => {
     devisID: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: Devis,
-        key: 'devisID',
-      },
     },
+    
     thirdPartyFees: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -59,7 +56,7 @@ export default (db) => {
     timestamps: true,
     paranoid: true,
   });
-  
+
   return Invoice;
 
 }

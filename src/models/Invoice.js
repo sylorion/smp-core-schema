@@ -16,11 +16,11 @@ export default (db) => {
       primaryKey: true,
       autoIncrement: true,
     },
-    devisID: {
+    estimateID: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    
+
     thirdPartyFees: {
       type: DataTypes.INTEGER,
       allowNull: false,

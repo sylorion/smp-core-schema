@@ -11,7 +11,6 @@ export default (db) => {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
-            allowNull: false
         },
         authorID: {
             type: DataTypes.INTEGER,

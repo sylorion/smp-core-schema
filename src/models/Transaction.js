@@ -14,8 +14,8 @@ export default (db) => {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
-      allowNull: false,
     },
+    
     invoiceID: {
       type: DataTypes.INTEGER,
       allowNull: false, 

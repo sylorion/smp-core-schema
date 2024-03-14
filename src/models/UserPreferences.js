@@ -35,7 +35,7 @@ export default (db) => {
       defaultPaymentMethodID: DataTypes.INTEGER,
       notificationFrequency: DataTypes.STRING(32),
       showRecommendations: DataTypes.BOOLEAN,
-      otherSettings: DataTypes.TEXT,
+      otherSettings: DataTypes.JSON,
     },
     {
       sequelize: db,

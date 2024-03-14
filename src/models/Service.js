@@ -1,7 +1,7 @@
 // src/models/Service.js
 // Use ES6 exporter to the outer and not CommonJS
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
-import { DataTypes, Model } from 'sequelize'
+import { DataTypes, Model } from 'sequelize' 
 // Importing enums 
 import ServiceSupplyForm  from '../enums/ServiceSupplyForm.js';
 import ServiceUptakeType  from '../enums/ServiceUptakeType.js';

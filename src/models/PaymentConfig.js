@@ -23,7 +23,7 @@ export default (db) => {
       allowNull: false, 
     },
     partnerTokenAuthDetails: DataTypes.TEXT,
-    paymentConfigDetails: DataTypes.TEXT, 
+    paymentConfigDetails: DataTypes.JSON, 
   },
   {
     sequelize: db,

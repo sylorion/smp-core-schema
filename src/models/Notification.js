@@ -1,3 +1,4 @@
+
 // ./src/models/Notification.js
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'

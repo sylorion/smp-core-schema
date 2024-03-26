@@ -18,6 +18,8 @@ import ServiceSupplyForm from './src/enums/ServiceSupplyForm.js';
 import ServiceUptakeType from './src/enums/ServiceUptakeType.js';
 import CriteriaTargetedEntity from './src/enums/CriteriaTargetedEntity.js';
 import UserType from './src/enums/UserType.js';
+import NotificationType from './src/enums/NotificationType.js';
+
 
 // console.log(Object.values(ObjectStatus))
 // console.log(Object.values(MediaType))
@@ -66,6 +68,8 @@ import modelUserRole from './src/models/UserRole.js';
 import modelUserToken from './src/models/UserToken.js';
 import modelTagOrganization from './src/models/TagOrganization.js';
 import modelTopicOrganization from './src/models/TopicOrganization.js';
+import modelNotificationTemplate from './src/models/NotificationTemplate.js';
+
 
 
 
@@ -76,7 +80,7 @@ export {
     modelEstimateAsset, modelDiscount, modelDocumentation,
     modelFaqAnswer, modelFaqOrganization, modelFaqQuestion,
     modelFaqService, modelFollow, modelIndustry, modelInvoice,
-    modelMedia, modelNotification, modelOrganization,
+    modelMedia, modelNotification,modelNotificationTemplate,modelOrganization,
     modelOrganizationMedia, modelPaymentConfig,
     modelPaymentMethod, modelPlace, modelProfile, modelReview,
     modelRole, modelService, modelServiceAsset,
@@ -90,6 +94,6 @@ export {
     ObjectStatus, OrganizationEconomicSizeKind,
     PaymentMethodType, PaymentStatus, PlaceKind,
     ProfileGender, ServiceBillingPlan, ServicesAcceptedDevice,
-    ServiceSupplyForm, ServiceUptakeType, CriteriaTargetedEntity, UserType,
+    ServiceSupplyForm, ServiceUptakeType, CriteriaTargetedEntity, UserType,NotificationType
 }
 // ...

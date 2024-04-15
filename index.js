@@ -27,7 +27,7 @@ import NotificationType from './src/enums/NotificationType.js';
 // console.log(MediaType)
 
 import modelApplication from './src/models/Application.js';
-import modelApplicationKey from './src/models/ApplicationKey.js';
+import modelApplicationToken from './src/models/ApplicationToken.js';
 import modelAsset from './src/models/Asset.js';
 import modelAuditLog from './src/models/AuditLog.js';
 import modelComment from './src/models/Comment.js';
@@ -75,7 +75,7 @@ import modelNotificationTemplate from './src/models/NotificationTemplate.js';
 
 
 export {
-    modelApplication, modelApplicationKey, modelAsset,
+    modelApplication, modelApplicationToken, modelAsset,
     modelAuditLog, modelComment, modelCriteria, modelEstimate,
     modelEstimateAsset, modelDiscount, modelDocumentation,
     modelFaqAnswer, modelFaqOrganization, modelFaqQuestion,

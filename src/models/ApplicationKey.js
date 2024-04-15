@@ -1,12 +1,12 @@
-// ./src/models/ApplicationKey.js
+// ./src/models/ApplicationToken.js
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 
 export default (db) => {
-  class ApplicationKey extends BaseEntityMixin(Model) { };
-  ApplicationKey.init(db, DataTypes, 
+  class ApplicationToken extends BaseEntityMixin(Model) { };
+  ApplicationToken.init(db, DataTypes, 
     {
-    ApplicationKeyID: {
+    ApplicationTokenID: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
@@ -26,9 +26,9 @@ export default (db) => {
     // autres champs si nécessaire
   }, {
     sequelize: db,
-    modelName: 'ApplicationKey',
-    tableName: 'ApplicationKey',
+    modelName: 'ApplicationToken',
+    tableName: 'ApplicationToken',
     timestamps: true,
   });
-  return ApplicationKey;
+  return ApplicationToken;
 }

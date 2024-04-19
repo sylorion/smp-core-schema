@@ -1,15 +1,11 @@
 // ./src/models/UserToken.js
-// Use ES6 exporter to the outer and not CommonJS
-import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
-import { DataTypes, Model } from 'sequelize'
-// Importing enums 
-// No enum dependant
+import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js';
+import { DataTypes, Model } from 'sequelize';
+
 export default (db) => {
+  class UserToken extends BaseEntityMixin(Model) {};
 
-  class UserToken extends Model {};
-
-  UserToken.init(db, DataTypes, 
-  {
+  UserToken.init(db,DataTypes, {  
     userTokenID: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -35,21 +31,18 @@ export default (db) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    createdAt: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: new Date(),
-    },
+   
     newTokenGeneratedAt: {
       type: DataTypes.DATE,
       allowNull: true
-    }, 
-  }, 
-  {
+    },
+  }, {
     sequelize: db,
     modelName: 'UserToken',
     tableName: 'UserToken',
     timestamps: true,
+    paranoid: true  // Si vous voulez activer 'deletedAt'
   });
+
   return UserToken;
-}
+};

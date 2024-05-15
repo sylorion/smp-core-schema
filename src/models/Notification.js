@@ -22,7 +22,7 @@ export default (db) => {
         allowNull: false,
       },
 
-      notificationTemplate: {
+      notificationTemplateID: {
         type: DataTypes.INTEGER,
       },
 
@@ -32,7 +32,6 @@ export default (db) => {
         allowNull: false,
       },
 
-      // TODO:  update to NotificationType which will allow to infer a title
       title: {
         type: DataTypes.STRING(255),
         allowNull: false,

@@ -15,12 +15,10 @@ export default (db) => {
             autoIncrement: true,
             allowNull: false
         },
-        // TODO:  update to NotificationTemplateType which will allow to infer a title
         title: {
             type: DataTypes.STRING(255),
             allowNull: false
         },
-        // TODO: update to messageTemplateID which will help to built messages
         message: {
             type: DataTypes.TEXT,
             allowNull: false

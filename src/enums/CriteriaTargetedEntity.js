@@ -4,6 +4,7 @@ const CriteriaTargetedEntity = {
   ORGANIZATION:   'organization',
   PLACE:          'place',
   APPLICATION:    'application',
+  COMMENT :       'comment',
 };
 
 export default CriteriaTargetedEntity ;

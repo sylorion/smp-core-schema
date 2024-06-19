@@ -86,7 +86,7 @@ export default (db) => {
       defaultValue: ServiceBillingPlan.DIRECT,
     },
     onlineService: DataTypes.BOOLEAN,
-    advancedAttributes: DataTypes.TEXT, 
+    advancedAttributes: DataTypes.JSON, 
   },
   {
     sequelize: db,

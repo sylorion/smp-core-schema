@@ -21,7 +21,7 @@ export default (db) => {
     },
     roleName: DataTypes.STRING(32),
     description: DataTypes.TEXT,
-    permissions: DataTypes.TEXT,
+    permissions: DataTypes.JSON,
   },
   {
     sequelize: db,

@@ -64,7 +64,7 @@ export default (db) => {
     summary: DataTypes.TEXT,
     locationID: DataTypes.INTEGER,
     parentOrganizationID: DataTypes.INTEGER,
-    advancedAttributes: DataTypes.TEXT, 
+    advancedAttributes: DataTypes.JSON, 
   },
   {
     sequelize: db,

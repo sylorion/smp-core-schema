@@ -24,10 +24,10 @@ export default (db) => {
       },
       lang: DataTypes.STRING(16),
       timeZone: DataTypes.STRING(64),
-      notificationPreferences: DataTypes.TEXT,
-      privacySettings: DataTypes.TEXT,
+      notificationPreferences: DataTypes.JSON,
+      privacySettings: DataTypes.JSON,
       theme: DataTypes.INTEGER,
-      marketplaceConfig: DataTypes.TEXT,
+      marketplaceConfig: DataTypes.JSON,
       defaultCurrency: {
         type: DataTypes.ENUM(Object.values(ServicesAcceptedDevice)),
         defaultValue: ServicesAcceptedDevice.EUR,

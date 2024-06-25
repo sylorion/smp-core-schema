@@ -44,7 +44,7 @@ export default (db) => {
       type: DataTypes.INTEGER,
       allowNull: false, 
     },
-    details: DataTypes.TEXT,
+    details: DataTypes.JSON,
     stage: {
       type: DataTypes.ENUM(Object.values(EstimateStage)),
       defaultValue: EstimateStage.SUBMITTED,

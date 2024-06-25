@@ -12,7 +12,7 @@ export default (db) => {
 
   UserPreferences.init(db, DataTypes,
     {
-      preferenceID: {
+      UserpreferencesID: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,

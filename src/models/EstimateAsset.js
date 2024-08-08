@@ -25,6 +25,18 @@ export default (db) => {
       type: DataTypes.INTEGER,
       allowNull: false, 
     }, 
+    mandatry: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false, 
+    },
+    initialPrice: { 
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    }, 
+    quantity: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
     sequelize: db,

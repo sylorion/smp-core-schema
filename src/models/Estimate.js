@@ -18,11 +18,11 @@ export default (db) => {
     },
     operatorUserID: {
       type: DataTypes.INTEGER,
-      allowNull: false, 
+      allowNull: true, 
     },
     buyerOrganizationID: {
       type: DataTypes.INTEGER,
-      allowNull: false, 
+      allowNull: true, 
     },
     sellerOrganizationID: {
       type: DataTypes.INTEGER,
@@ -42,12 +42,13 @@ export default (db) => {
     negociatedPrice: DataTypes.INTEGER,
     discountID: {
       type: DataTypes.INTEGER,
-      allowNull: false, 
+      allowNull: true, 
     },
     details: DataTypes.JSON,
     stage: {
       type: DataTypes.ENUM(Object.values(EstimateStage)),
       defaultValue: EstimateStage.SUBMITTED,
+      allowNull: false,
     }, 
   },
   {

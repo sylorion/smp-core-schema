@@ -20,6 +20,10 @@ export default (db) => {
       type: DataTypes.INTEGER,
       allowNull: true, 
     },
+    parentCommentID: {
+      type: DataTypes.INTEGER,
+      allowNull: true, 
+    },
     organizationID: {
       type: DataTypes.INTEGER,
       allowNull: true, 

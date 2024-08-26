@@ -35,8 +35,8 @@ export default (db) => {
       type: DataTypes.STRING(16),
       allowNull: false,
     },
-    actionDetails: DataTypes.STRING,
-    clientDetails: DataTypes.STRING,
+    actionDetails: DataTypes.JSON,
+    clientDetails: DataTypes.JSON,
   },
   {
     sequelize: db,

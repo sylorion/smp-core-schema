@@ -39,6 +39,11 @@ export default (db) => {
     proposedPrice: DataTypes.INTEGER,
     description: DataTypes.TEXT,
     comment: DataTypes.TEXT,
+    propositionCount :{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+      
     negociatedPrice: DataTypes.INTEGER,
     discountID: {
       type: DataTypes.INTEGER,

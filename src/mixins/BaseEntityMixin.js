@@ -56,8 +56,7 @@ function BaseEntityMixin(GivenModel) {
                     defaultValue: ObjectStatus.OFFLINE,
                 },
                 createdAt: {
-                    type: DataTypes.DATE,
-                    defaultValue: DataTypes.NOW,
+                    type: DataTypes.DATE, 
                 },
                 updatedAt: DataTypes.DATE,
                 deletedAt: DataTypes.DATE,

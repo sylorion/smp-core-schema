@@ -15,7 +15,7 @@ export default (db) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    key: {
+    token: {
       type: DataTypes.STRING,
       allowNull: false,
     },

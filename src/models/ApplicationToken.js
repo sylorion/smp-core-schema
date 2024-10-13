@@ -6,7 +6,7 @@ export default (db) => {
   class ApplicationToken extends BaseEntityMixin(Model) { };
   ApplicationToken.init(db, DataTypes, 
     {
-    ApplicationTokenID: {
+    applicationTokenID: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,

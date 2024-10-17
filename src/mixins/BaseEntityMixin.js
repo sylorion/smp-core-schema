@@ -19,12 +19,12 @@ function BaseEntityMixin(GivenModel) {
         slug(from, options){
             return slugify(from, options)
         }
-        
+
         uuid(){
             return uuidv4();
         }
         static init(sequelize, DataTypes, nextAttributes, configs) {
-            return super.init({
+            let supInit = super.init({
                 uniqRef: {
                     type: DataTypes.STRING(255),
                     allowNull: false,
@@ -50,6 +50,9 @@ function BaseEntityMixin(GivenModel) {
                 // updatedAt: { type: DataTypes.DATE, allowNull: false },
                 // deletedAt: { type: DataTypes.DATE },
             }, configs);
+            supInit.prototype.slug = this.slug;
+            supInit.prototype.uuid = this.uuid;
+            return supInit;
         }
     };
 };

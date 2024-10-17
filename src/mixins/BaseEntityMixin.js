@@ -3,6 +3,21 @@
 import ObjectStatus from '../enums/ObjectStatus.js';
 import { v4 as uuidv4 } from 'uuid';
 import slugify from 'slugify';
+ 
+function slug(from, lang='en') {
+    return slugify(from, {
+        replacement: '-',  // replace spaces with replacement character, defaults to `-`
+        remove: undefined, // remove characters that match this regex, let to the defaults `undefined`
+        lower: true,      // convert to lower case, defaults to `false`
+        strict: false,     // strip special characters except replacement, defaults to `false`
+        locale: lang,      // language code of the locale to use
+        trim: true         // trim leading and trailing replacement chars, defaults to `true`
+    })
+}
+
+function uuid() {
+    return uuidv4();
+}
 
 function BaseEntityMixin(GivenModel) {
     return class extends GivenModel {
@@ -19,7 +34,6 @@ function BaseEntityMixin(GivenModel) {
         slug(from, options){
             return slugify(from, options)
         }
-
         uuid(){
             return uuidv4();
         }
@@ -46,12 +60,9 @@ function BaseEntityMixin(GivenModel) {
                 },
                 updatedAt: DataTypes.DATE,
                 deletedAt: DataTypes.DATE,
-                // createdAt: { type: DataTypes.DATE, allowNull: false },
-                // updatedAt: { type: DataTypes.DATE, allowNull: false },
-                // deletedAt: { type: DataTypes.DATE },
             }, configs);
-            supInit.prototype.slug = this.slug;
-            supInit.prototype.uuid = this.uuid;
+            supInit.prototype.slug = slug;
+            supInit.prototype.uuid = uuid;
             return supInit;
         }
     };

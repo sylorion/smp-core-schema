@@ -19,26 +19,28 @@ function uuid() {
     return uuidv4();
 }
 
+const slugOptions = {
+    replacement: '-',  // replace spaces with replacement character, defaults to `-`
+    remove: undefined, // remove characters that match this regex, let to the defaults `undefined`
+    lower: true,      // convert to lower case, defaults to `false`
+    strict: false,     // strip special characters except replacement, defaults to `false`
+    locale: 'en',      // language code of the locale to use
+    trim: true         // trim leading and trailing replacement chars, defaults to `true`
+} ; 
 function BaseEntityMixin(GivenModel) {
-    return class extends GivenModel {
-        slug(from) {
-            return this.slug(from, {
-                replacement: '-',  // replace spaces with replacement character, defaults to `-`
-                remove: undefined, // remove characters that match this regex, let to the defaults `undefined`
-                lower: true,      // convert to lower case, defaults to `false`
-                strict: false,     // strip special characters except replacement, defaults to `false`
-                locale: 'en',      // language code of the locale to use
-                trim: true         // trim leading and trailing replacement chars, defaults to `true`
-            })
+    class BaseModelFromMixin extends GivenModel {
+        static slug(from) {
+            return BaseModelFromMixin.slug(from, slugOptions)
         }
-        slug(from, options){
-            return slugify(from, options)
+        static slug(from, options){
+            const ops = options ?? slugOptions;
+            return slugify(from, ops)
         }
-        uuid(){
+        static uuid(){
             return uuidv4();
         }
         static init(sequelize, DataTypes, nextAttributes, configs) {
-            let supInit = super.init({
+           return super.init({
                 uniqRef: {
                     type: DataTypes.STRING(255),
                     allowNull: false,
@@ -60,12 +62,10 @@ function BaseEntityMixin(GivenModel) {
                 },
                 updatedAt: DataTypes.DATE,
                 deletedAt: DataTypes.DATE,
-            }, configs);
-            supInit.prototype.slug = slug;
-            supInit.prototype.uuid = uuid;
-            return supInit;
+            }, configs);    
         }
     };
+    return BaseModelFromMixin;
 };
 
 export { BaseEntityMixin };

@@ -7,7 +7,6 @@ import { DataTypes, Model } from 'sequelize'
 export default (db) => {
 
   class Role extends BaseEntityMixin(Model) { }
-
   Role.init(db, DataTypes, 
     {
     roleID: {
@@ -30,6 +29,5 @@ export default (db) => {
     timestamps: true,
     paranoid: true,
   });
-
   return Role;
 }

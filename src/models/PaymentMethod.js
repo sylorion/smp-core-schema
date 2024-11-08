@@ -32,7 +32,6 @@ export default (db) => {
     cardNumber: DataTypes.STRING(31),
     cardType:  {
       type: DataTypes.ENUM(Object.values(PaymentMethodType)),
-      defaultValue: PaymentMethodType.CARD,
       allowNull: false,
     },
     methodDetails: DataTypes.TEXT,

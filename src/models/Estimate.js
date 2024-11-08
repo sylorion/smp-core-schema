@@ -41,7 +41,7 @@ export default (db) => {
     comment: DataTypes.TEXT,
     propositionCount :{
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
       
     negociatedPrice: DataTypes.INTEGER,

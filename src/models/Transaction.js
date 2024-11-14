@@ -26,7 +26,7 @@ export default (db) => {
     },
     dealMediaProofID: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     transactionDateTime: {
       type: DataTypes.DATE,

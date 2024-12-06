@@ -33,6 +33,14 @@ export default (db) => {
       type:DataTypes.INTEGER,
       allowNull: true,
      },
+     userID: {
+      type:DataTypes.INTEGER,
+      allowNull: true,
+     },
+     authorID: {
+      type:DataTypes.INTEGER,
+      allowNull: false,
+     },
     idCardNumber: DataTypes.STRING(32),
     passportNumber: DataTypes.STRING(32),
     socialSecurityNumber: DataTypes.STRING(16), 

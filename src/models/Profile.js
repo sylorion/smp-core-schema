@@ -39,7 +39,7 @@ export default (db) => {
      },
      authorID: {
       type:DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
      },
     idCardNumber: DataTypes.STRING(32),
     passportNumber: DataTypes.STRING(32),

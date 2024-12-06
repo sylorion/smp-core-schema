@@ -17,8 +17,14 @@ export default (db) => {
       primaryKey: true,
       autoIncrement: true,
     },
-    firstName: DataTypes.STRING(64),
-    lastName: DataTypes.STRING(64),
+    firstName:{
+      type: DataTypes.STRING(64),
+      allowNull: true,
+    },
+    lastName: {
+      type: DataTypes.STRING(64),
+      allowNull: true,
+    },
     dateOfBirth: {
       type: DataTypes.DATE,
       allowNull: true, 

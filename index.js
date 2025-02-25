@@ -19,6 +19,8 @@ import ServiceUptakeType from './src/enums/ServiceUptakeType.js';
 import CriteriaTargetedEntity from './src/enums/CriteriaTargetedEntity.js';
 import UserType from './src/enums/UserType.js';
 import NotificationType from './src/enums/NotificationType.js';
+import ContactSource from './src/enums/ContactSource.js';
+
 
 
 // console.log(Object.values(ObjectStatus))
@@ -69,6 +71,9 @@ import modelUserToken from './src/models/UserToken.js';
 import modelTagOrganization from './src/models/TagOrganization.js';
 import modelTopicOrganization from './src/models/TopicOrganization.js';
 import modelNotificationTemplate from './src/models/NotificationTemplate.js';
+import modelNewsletterContact from './src/models/NewsletterContact.js';
+import modelContactGroupMembership from './src/models/ContactGroupMembership.js';
+import modelContactGroup  from './src/models/ContactGroup.js';
 
 
 
@@ -86,13 +91,13 @@ export {
     modelRole, modelService, modelServiceAsset,
     modelServiceAttribute, modelServiceMedia, modelTag,
     modelTermsAndConditions, modelTopic, modelTransaction,
-    modelUser,
-    modelUserOrganization, modelUserPreferences,
+    modelUser, modelContactGroupMembership,modelContactGroup,
+    modelUserOrganization, modelUserPreferences, modelNewsletterContact,
     modelUserRole, modelUserToken,modelTagOrganization,modelTopicOrganization,
     AuditLogActionType, EstimateStage, FollowedEntityType,
     MediaType, NotificationFrequencyPref,
     ObjectStatus, OrganizationEconomicSizeKind,
-    PaymentMethodType, PaymentStatus, PlaceKind,
+    PaymentMethodType, PaymentStatus, PlaceKind, ContactSource,
     ProfileGender, ServiceBillingPlan, ServicesAcceptedDevice,
     ServiceSupplyForm, ServiceUptakeType, CriteriaTargetedEntity, UserType,NotificationType
 }

@@ -5,7 +5,8 @@ import ObjectStatus from "../enums/ObjectStatus.js";
 export default (db) => {
   class ContactGroup extends BaseEntityMixin(Model) {}
 
-  ContactGroup.init(
+  ContactGroup.init( db,
+    DataTypes,
     {
     contactGroupID: {
         type: DataTypes.INTEGER,

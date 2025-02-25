@@ -7,7 +7,8 @@ import ContactGender from "../enums/ProfileGender.js";
 export default (db) => {
   class NewsletterContact extends BaseEntityMixin(Model) {}
 
-  NewsletterContact.init(
+  NewsletterContact.init( db,
+    DataTypes,
     {
       newsletterContactID: {
         type: DataTypes.INTEGER,

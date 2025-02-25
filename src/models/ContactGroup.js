@@ -27,7 +27,7 @@ export default (db) => {
       },
       description: {
         type: DataTypes.TEXT,
-        allowNull: true, // Remplace legend pour donner une description claire du groupe
+        allowNull: true, 
       },
       criteria: {
         type: DataTypes.JSONB,

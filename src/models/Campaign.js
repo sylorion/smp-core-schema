@@ -3,11 +3,11 @@ import { DataTypes, Model } from "sequelize";
 import ObjectStatus from "../enums/ObjectStatus.js";
 
 export default (db) => {
-  class Campain extends BaseEntityMixin(Model) {}
+  class Campaign extends BaseEntityMixin(Model) {}
 
-  Campain.init( db, DataTypes,
+  Campaign.init( db, DataTypes,
     {
-      campainID: {
+      campaignID: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -21,7 +21,7 @@ export default (db) => {
         type: DataTypes.STRING(255),
         allowNull: false,
       },
-      emailCampainTemplateID: {
+      emailCampaignTemplateID: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
@@ -57,12 +57,12 @@ export default (db) => {
     },
     {
       sequelize: db,
-      modelName: "Campain",
-      tableName: "Campain",
+      modelName: "Campaign",
+      tableName: "Campaign",
       timestamps: true,
       paranoid: true,
     }
   );
 
-  return Campain;
+  return Campaign;
 };

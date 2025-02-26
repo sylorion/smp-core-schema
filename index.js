@@ -74,7 +74,7 @@ import modelNotificationTemplate from './src/models/NotificationTemplate.js';
 import modelNewsletterContact from './src/models/NewsletterContact.js';
 import modelContactGroupMembership from './src/models/ContactGroupMembership.js';
 import modelContactGroup  from './src/models/ContactGroup.js';
-import modelCampain from './src/models/Campain.js';
+import modelCampaign from './src/models/Campaign.js';
 import modelNewsletter from './src/models/Newsletter.js';
 
 
@@ -93,7 +93,7 @@ export {
     modelRole, modelService, modelServiceAsset,
     modelServiceAttribute, modelServiceMedia, modelTag,
     modelTermsAndConditions, modelTopic, modelTransaction,
-    modelUser, modelContactGroupMembership,modelContactGroup,modelCampain,modelNewsletter,
+    modelUser, modelContactGroupMembership,modelContactGroup,modelCampaign,modelNewsletter,
     modelUserOrganization, modelUserPreferences, modelNewsletterContact,
     modelUserRole, modelUserToken,modelTagOrganization,modelTopicOrganization,
     AuditLogActionType, EstimateStage, FollowedEntityType,

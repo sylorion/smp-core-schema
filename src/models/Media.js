@@ -20,6 +20,17 @@ export default (db) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    entityName: {
+      type: DataTypes.STRING(64),
+      allowNull: false,
+    },
+    metadata: {
+      type: DataTypes.JSON,
+    },
+    entityID:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     mediaType: {
       type: DataTypes.ENUM(Object.values(MediaType)),
       allowNull: false,

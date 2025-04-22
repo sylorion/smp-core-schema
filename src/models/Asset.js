@@ -32,8 +32,8 @@ export default (db) => {
     legalVatPercent: DataTypes.INTEGER,
     stockQuantity: DataTypes.INTEGER,
     maxPerReservation: DataTypes.INTEGER,
-    conflictingAssets: DataTypes.TEXT,
-    applyableAssets: DataTypes.TEXT, 
+    conflictingAssets: DataTypes.JSON,
+    applyableAssets: DataTypes.JSON, 
   },
   {
     sequelize: db,

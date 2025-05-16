@@ -22,10 +22,7 @@ export default (db) => {
         type: DataTypes.STRING(255),
         allowNull: true,
       },
-      authorID: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-      },
+  
       mediaID: {
         type: DataTypes.INTEGER,
         allowNull: false,

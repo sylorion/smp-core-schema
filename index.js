@@ -1,4 +1,3 @@
-
 // ENUM 
 // To search from a path to import from a list of path : ([a-z\/-]*)/([a-zA-Z]*).js  with import $2 from '$0.js' ;
 import AuditLogActionType from './src/enums/AuditLogActionType.js';
@@ -31,6 +30,7 @@ import ContactSource from './src/enums/ContactSource.js';
 import modelApplication from './src/models/Application.js';
 import modelApplicationToken from './src/models/ApplicationToken.js';
 import modelAsset from './src/models/Asset.js';
+import modelAssetMedia from './src/models/AssetMedia.js';
 import modelAuditLog from './src/models/AuditLog.js';
 import modelComment from './src/models/Comment.js';
 import modelCriteria from './src/models/Criteria.js';
@@ -82,7 +82,7 @@ import modelNewsletter from './src/models/Newsletter.js';
 
 
 export {
-    modelApplication, modelApplicationToken, modelAsset,
+    modelApplication, modelApplicationToken, modelAsset, modelAssetMedia,
     modelAuditLog, modelComment, modelCriteria, modelEstimate,
     modelEstimateAsset, modelDiscount, modelDocumentation,
     modelFaqAnswer, modelFaqOrganization, modelFaqQuestion,

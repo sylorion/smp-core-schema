@@ -49,7 +49,12 @@ export default (db) => {
      },
     idCardNumber: DataTypes.STRING(32),
     passportNumber: DataTypes.STRING(32),
-    socialSecurityNumber: DataTypes.STRING(16), 
+    socialSecurityNumber: DataTypes.STRING(16),
+    profilePictureID: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+     
+    }
   },
   {
     sequelize: db,

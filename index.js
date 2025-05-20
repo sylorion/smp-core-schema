@@ -77,9 +77,15 @@ import modelContactGroup  from './src/models/ContactGroup.js';
 import modelCampaign from './src/models/Campaign.js';
 import modelNewsletter from './src/models/Newsletter.js';
 
+// Initialiser les modèles
+const Asset = modelAsset(db);
+const AssetMedia = modelAssetMedia(db);
+const Media = modelMedia(db);
 
-
-
+// Initialiser les relations
+if (AssetMedia.associate) {
+  AssetMedia.associate({ Media });
+}
 
 export {
     modelApplication, modelApplicationToken, modelAsset, modelAssetMedia,

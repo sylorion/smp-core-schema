@@ -7,9 +7,9 @@ export default (db) => {
 
   UserToken.init(db,DataTypes, {  
     userTokenID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     },
     userID: {
       type: DataTypes.INTEGER,

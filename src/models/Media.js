@@ -12,9 +12,9 @@ export default (db) => {
   Media.init(db, DataTypes, 
     {
     mediaID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true
+      defaultValue: () => createId(),
     },
     authorID: {
       type: DataTypes.INTEGER,

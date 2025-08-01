@@ -8,9 +8,9 @@ export default (db) => {
   Documentation.init(db, DataTypes, 
     { 
     documentationID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
       allowNull: false,
     },
     authorID: {

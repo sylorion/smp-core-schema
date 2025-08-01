@@ -10,9 +10,9 @@ export default (db) => {
     DataTypes,
     {
       topicOrganizationID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
       },
       topicID: {
         type: DataTypes.INTEGER,

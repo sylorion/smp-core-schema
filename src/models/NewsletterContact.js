@@ -11,9 +11,9 @@ export default (db) => {
     DataTypes,
     {
       newsletterContactID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
         allowNull: false,
       },
       uniqRef: {

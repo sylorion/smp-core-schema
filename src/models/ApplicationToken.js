@@ -7,9 +7,9 @@ export default (db) => {
   ApplicationToken.init(db, DataTypes, 
     {
     applicationTokenID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue:() => createId(),
     },
     applicationID: {
       type: DataTypes.INTEGER,

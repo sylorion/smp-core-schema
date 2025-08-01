@@ -10,9 +10,9 @@ export default (db) => {
     NotificationTemplates.init(db, DataTypes, 
         {
         notificationTemplateID: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             primaryKey: true,
-            autoIncrement: true,
+            defaultValue: () => createId(),
             allowNull: false
         },
         title: {

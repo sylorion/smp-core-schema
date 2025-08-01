@@ -8,9 +8,9 @@ export default (db) => {
   Estimate.init(db, DataTypes, 
     {
     estimateID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     }, 
     authorID: {
       type: DataTypes.INTEGER,

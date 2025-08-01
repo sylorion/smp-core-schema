@@ -8,9 +8,9 @@ export default (db) => {
   Newsletter.init(db, DataTypes, 
     {
       newsletterID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
         allowNull: false,
       },
       uniqRef: {

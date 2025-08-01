@@ -7,9 +7,9 @@ export default (db) => {
   AuditLog.init(db, DataTypes, 
     {
     auditLogID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     }, 
     actionType: DataTypes.STRING(255), // Replace with actual action type data type
     userID: {

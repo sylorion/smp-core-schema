@@ -11,9 +11,9 @@ export default (db) => {
   UserOrganization.init(db, DataTypes, 
   {
     userOrganizationID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     },
     legend: DataTypes.STRING(64),
     authorID: {

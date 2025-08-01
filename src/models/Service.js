@@ -13,9 +13,9 @@ export default (db) => {
   Service.init(db, DataTypes, 
     {
     serviceID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     }, 
     authorID: {
       type: DataTypes.INTEGER,

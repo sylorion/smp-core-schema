@@ -11,9 +11,9 @@ export default (db) => {
   Tag.init(db, DataTypes, 
   {
     tagID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     }, 
     authorID: {
       type: DataTypes.INTEGER,

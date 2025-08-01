@@ -8,9 +8,9 @@ export default (db) => {
   Campaign.init( db, DataTypes,
     {
       campaignID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
         allowNull: false,
       },
       uniqRef: {

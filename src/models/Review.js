@@ -11,9 +11,9 @@ export default (db) => {
   Review.init(db, DataTypes, 
     {
     reviewID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     }, 
     serviceID: {
       type: DataTypes.INTEGER,

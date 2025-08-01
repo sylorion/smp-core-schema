@@ -9,9 +9,9 @@ export default (db) => {
   Asset.init(db, DataTypes, 
     {
     assetID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     },
     
     title: DataTypes.STRING(64),

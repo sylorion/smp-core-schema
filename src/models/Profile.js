@@ -13,9 +13,9 @@ export default (db) => {
   Profile.init(db, DataTypes,
     {
     profileID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     },
     firstName:{
       type: DataTypes.STRING(64),

@@ -13,9 +13,9 @@ export default (db) => {
   UserPreferences.init(db, DataTypes,
     {
       userPreferencesID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
       },
       userID: {
         type: DataTypes.INTEGER,

@@ -9,9 +9,9 @@ export default (db) => {
     DataTypes,
     {
     contactGroupID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
         allowNull: false,
       },
       uniqRef: {

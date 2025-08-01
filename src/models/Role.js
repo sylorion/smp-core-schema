@@ -10,9 +10,9 @@ export default (db) => {
   Role.init(db, DataTypes, 
     {
     roleID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     },
     authorID: {
       type: DataTypes.INTEGER,

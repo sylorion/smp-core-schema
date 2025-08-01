@@ -8,9 +8,9 @@ export default (db) => {
     FaqService.init(db, DataTypes, 
         {
         faqServiceID: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             primaryKey: true,
-            autoIncrement: true,
+            defaultValue: () => createId(),
             allowNull: false
         },
         authorID: {

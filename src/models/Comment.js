@@ -7,9 +7,9 @@ export default (db) => {
   Comment.init(db, DataTypes,
   {
     commentID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     }, 
     content: DataTypes.TEXT,
     authorID: {

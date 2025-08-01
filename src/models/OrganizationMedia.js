@@ -10,9 +10,9 @@ export default (db) => {
   OrganizationMedia.init(db, DataTypes,
     {
       organizationMediaID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
       },
       authorID: {
         type: DataTypes.INTEGER,

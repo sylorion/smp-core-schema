@@ -11,9 +11,9 @@ export default (db) => {
     Follow.init(db, DataTypes, 
         {
         follwID: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             primaryKey: true,
-            autoIncrement: true,
+            defaultValue: () => createId(),
             allowNull: false
         },
         authorID: {

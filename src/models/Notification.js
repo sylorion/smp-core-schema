@@ -12,9 +12,9 @@ export default (db) => {
     DataTypes,
     {
       notificationID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
         allowNull: false,
       },
       userID: {

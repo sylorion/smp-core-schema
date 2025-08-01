@@ -10,9 +10,9 @@ export default (db) => {
   AssetMedia.init(db, DataTypes, 
     {
       assetMediaID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
       },
       uniqRef: {
         type: DataTypes.STRING(36),

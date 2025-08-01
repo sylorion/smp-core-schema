@@ -13,9 +13,9 @@ export default (db) => {
   User.init(db, DataTypes,
     {
       userID: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         primaryKey: true,
-        autoIncrement: true,
+        defaultValue: () => createId(),
       },
 
       username: {

@@ -8,9 +8,9 @@ export default (db) => {
     FaqQuestion.init(db, DataTypes, 
         {
         faqQuestionID: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             primaryKey: true,
-            autoIncrement: true,
+            defaultValue: () => createId(),
             allowNull: false
         }, 
         authorID: {

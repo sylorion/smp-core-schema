@@ -11,9 +11,9 @@ export default (db) => {
   Transaction.init(db, DataTypes, 
   {
     transactionID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     },
     
     invoiceID: {

@@ -11,9 +11,9 @@ export default (db) => {
   UserRole.init(db, DataTypes, 
   {
     userRoleID: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      defaultValue: () => createId(),
     },
     legend: DataTypes.STRING(64),
     authorID: {

@@ -3,6 +3,8 @@ import NotificationType from "../enums/NotificationType.js";
 import { BaseEntityMixin } from "../mixins/BaseEntityMixin.js";
 import { DataTypes, Model } from "sequelize";
 // TODO Create NotificationCategory and import it
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
   class Notifications extends BaseEntityMixin(Model) {}

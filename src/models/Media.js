@@ -4,6 +4,8 @@ import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 // Importing enums 
 import MediaType from '../enums/MediaType.js';
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
 

@@ -4,6 +4,8 @@ import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 // Importing enums 
 import PlaceKind from '../enums/PlaceKind.js' ; 
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
   class Place extends BaseEntityMixin(Model) { }

@@ -2,6 +2,7 @@
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 
+
 export default (db) => {
 
   class Asset extends BaseEntityMixin(Model) { };

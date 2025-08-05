@@ -1,6 +1,8 @@
 // ./src/models/TagOrganization.js
 import { BaseEntityMixin } from "../mixins/BaseEntityMixin.js";
 import { DataTypes, Model } from "sequelize";
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
   class TagOrganization extends BaseEntityMixin(Model) {}

@@ -3,6 +3,8 @@
 // Use ES6 exporter to the outer and not CommonJS
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
+import createId from '../mixins/createId.js'
+
 // Importing enums 
 import UserType from '../enums/UserType.js';
 

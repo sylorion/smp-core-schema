@@ -5,6 +5,8 @@ import { DataTypes, Model } from 'sequelize'
 // Importing enums 
 import ServicesAcceptedDevice        from '../enums/ServicesAcceptedDevice.js' ;
 import OrganizationEconomicSizeKind  from '../enums/OrganizationEconomicSizeKind.js' ;
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
   class Organization extends BaseEntityMixin(Model) { }

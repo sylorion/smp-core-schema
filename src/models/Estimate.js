@@ -2,6 +2,8 @@
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 import EstimateStage from '../enums/EstimateStage.js';
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
   class Estimate extends BaseEntityMixin(Model) { };

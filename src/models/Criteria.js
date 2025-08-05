@@ -2,6 +2,8 @@
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 import CriteriaTargetedEntity from '../enums/CriteriaTargetedEntity.js';
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
   class Criteria extends BaseEntityMixin(Model) { };

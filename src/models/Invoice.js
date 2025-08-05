@@ -4,6 +4,8 @@ import { BaseEntityMixin } from "../mixins/BaseEntityMixin.js";
 import { DataTypes, Model } from "sequelize";
 // Importing enums
 import PaymentStatus from "../enums/PaymentStatus.js";
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
   class Invoice extends BaseEntityMixin(Model) {}

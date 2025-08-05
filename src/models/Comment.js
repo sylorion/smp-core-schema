@@ -1,6 +1,7 @@
 // src/models/Comment.js
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
+import createId from '../mixins/createId.js'
 
 export default (db) => {
   class Comment extends BaseEntityMixin(Model) { };

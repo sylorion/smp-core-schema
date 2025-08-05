@@ -1,6 +1,8 @@
 import { BaseEntityMixin } from "../mixins/BaseEntityMixin.js";
 import { DataTypes, Model } from "sequelize";
 import ObjectStatus from "../enums/ObjectStatus.js";
+import createId from '../mixins/createId.js'
+
 
 export default (db) => {
   class Newsletter extends BaseEntityMixin(Model) {}

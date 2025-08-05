@@ -1,6 +1,9 @@
 // ./src/models/ApplicationToken.js
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
+import createId from '../mixins/createId.js'
+
+
 
 export default (db) => {
   class ApplicationToken extends BaseEntityMixin(Model) { };

@@ -3,7 +3,7 @@
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 // TODO Create NotificationTemplateCategory and import it
-import createId from '../mixins/createId.js'
+import createId from '../mixins/CreateId.js'
 
 
 export default (db) => {

@@ -6,7 +6,7 @@ import { DataTypes, Model } from 'sequelize'
 import ServiceSupplyForm  from '../enums/ServiceSupplyForm.js';
 import ServiceUptakeType  from '../enums/ServiceUptakeType.js';
 import ServiceBillingPlan from '../enums/ServiceBillingPlan.js';
-import createId from '../mixins/createId.js'
+import createId from '../mixins/CreateId.js'
 
 
 export default (db) => {

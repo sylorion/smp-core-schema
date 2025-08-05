@@ -5,7 +5,7 @@ import { DataTypes, Model } from 'sequelize'
 // Importing enums 
 import ServicesAcceptedDevice        from '../enums/ServicesAcceptedDevice.js' ;
 import OrganizationEconomicSizeKind  from '../enums/OrganizationEconomicSizeKind.js' ;
-import createId from '../mixins/createId.js'
+import createId from '../mixins/CreateId.js'
 
 
 export default (db) => {

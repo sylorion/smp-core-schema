@@ -2,7 +2,7 @@
 import { BaseEntityMixin } from "../mixins/BaseEntityMixin.js";
 import { DataTypes, Model } from "sequelize";
 // Importing enums, assuming ObjectStatus is defined in your enums
-import createId from '../mixins/CreateId.js'
+import createId from '../mixins/createId.js'
 
 
 export default (db) => {

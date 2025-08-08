@@ -4,7 +4,7 @@ import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
 // Importing enums 
 import PaymentMethodType from '../enums/PaymentMethodType.js';
-import createId from '../mixins/CreateId.js'
+import createId from '../mixins/createId.js'
 
 
 export default (db) => {

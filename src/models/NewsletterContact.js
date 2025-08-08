@@ -3,7 +3,7 @@ import { DataTypes, Model } from "sequelize";
 import ObjectStatus from "../enums/ObjectStatus.js";
 import ContactSource from "../enums/ContactSource.js";
 import ContactGender from "../enums/ProfileGender.js";
-import createId from '../mixins/CreateId.js'
+import createId from '../mixins/createId.js'
 
 
 export default (db) => {

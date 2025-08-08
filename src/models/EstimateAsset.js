@@ -1,7 +1,7 @@
 // src/models/EstimateAsset.js
 import { BaseEntityMixin } from '../mixins/BaseEntityMixin.js'
 import { DataTypes, Model } from 'sequelize'
-import createId from '../mixins/CreateId.js'
+import createId from '../mixins/createId.js'
 
 
 export default (db) => {

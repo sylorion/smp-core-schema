@@ -37,23 +37,19 @@ export default (db) => {
     },
     nationality: DataTypes.STRING(32),
     phoneNumber: DataTypes.STRING(32),
-    locationID: {
-      type:DataTypes.INTEGER,
+    locationID: { type: DataTypes.STRING,
       allowNull: true,
      },
-     userID: {
-      type:DataTypes.INTEGER,
+     userID: { type: DataTypes.STRING,
       allowNull: true,
      },
-     authorID: {
-      type:DataTypes.INTEGER,
+     authorID: { type: DataTypes.STRING,
       allowNull: true,
      },
     idCardNumber: DataTypes.STRING(32),
     passportNumber: DataTypes.STRING(32),
     socialSecurityNumber: DataTypes.STRING(16),
-    profilePictureID: {
-      type: DataTypes.INTEGER,
+    profilePictureID: { type: DataTypes.STRING,
       allowNull: true,
      
     }

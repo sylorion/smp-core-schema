@@ -15,13 +15,11 @@ export default (db) => {
       defaultValue: () => createId(),
       allowNull: false,
     },
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false,
     },
 
-    serviceID: {
-      type: DataTypes.INTEGER,
+    serviceID: { type: DataTypes.STRING,
       allowNull: true,
     },
 
@@ -30,8 +28,7 @@ export default (db) => {
       allowNull: false,
     },
 
-    organizationID: {
-      type: DataTypes.INTEGER,
+    organizationID: { type: DataTypes.STRING,
       allowNull: true,
     },
     level: {
@@ -43,8 +40,7 @@ export default (db) => {
       allowNull: false,
     },
     description: DataTypes.TEXT,
-    parentDocumentationID: {
-      type: DataTypes.INTEGER,
+    parentDocumentationID: { type: DataTypes.STRING,
       allowNull: true,
     },
   },

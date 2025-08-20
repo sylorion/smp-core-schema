@@ -17,12 +17,10 @@ export default (db) => {
         defaultValue: () => createId(),
         allowNull: false,
       },
-      tagID: {
-        type: DataTypes.INTEGER,
+      tagID: { type: DataTypes.STRING,
         allowNull: false,
       },
-      organizationID: {
-        type: DataTypes.INTEGER,
+      organizationID: { type: DataTypes.STRING,
         allowNull: false,
       },
      

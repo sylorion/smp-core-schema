@@ -17,16 +17,14 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     },
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false,
     
       },
     
     title: DataTypes.STRING(255),
     description: DataTypes.TEXT,
-    parentTopicID: {
-      type:DataTypes.INTEGER,
+    parentTopicID: { type: DataTypes.STRING,
       allowNull: true,
   
      },

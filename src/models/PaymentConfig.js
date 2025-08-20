@@ -16,12 +16,10 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     }, 
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false, 
     },
-    paymentMethodID: {
-      type: DataTypes.INTEGER,
+    paymentMethodID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     partnerTokenAuthDetails: DataTypes.TEXT,

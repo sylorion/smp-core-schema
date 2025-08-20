@@ -23,8 +23,7 @@ export default (db) => {
         type: DataTypes.STRING(255),
         allowNull: false,
       },
-      emailCampaignTemplateID: {
-        type: DataTypes.INTEGER,
+      emailCampaignTemplateID: { type: DataTypes.STRING,
         allowNull: false,
       },
       subject: {

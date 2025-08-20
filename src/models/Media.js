@@ -18,8 +18,7 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     },
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false,
     },
     entityName: {
@@ -29,8 +28,7 @@ export default (db) => {
     metadata: {
       type: DataTypes.JSON,
     },
-    entityID:{
-      type: DataTypes.INTEGER,
+    entityID: { type: DataTypes.STRING,
       allowNull: false,
     },
     mediaType: {

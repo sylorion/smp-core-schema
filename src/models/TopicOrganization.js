@@ -16,12 +16,10 @@ export default (db) => {
         primaryKey: true,
         defaultValue: () => createId(),
       },
-      topicID: {
-        type: DataTypes.INTEGER,
+      topicID: { type: DataTypes.STRING,
         allowNull: false,
       },
-      organizationID: {
-        type: DataTypes.INTEGER,
+      organizationID: { type: DataTypes.STRING,
         allowNull: false,
       },
      

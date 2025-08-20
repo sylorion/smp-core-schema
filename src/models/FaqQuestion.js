@@ -15,17 +15,14 @@ export default (db) => {
             defaultValue: () => createId(),
             allowNull: false
         }, 
-        authorID: {
-            type: DataTypes.INTEGER,
+        authorID: { type: DataTypes.STRING,
             allowNull: false,
            
         },
-        topicID: { 
-            type: DataTypes.INTEGER,
+        topicID: { type: DataTypes.STRING,
             allowNull: true 
         },
-        parentFaqQuestionID: {
-            type: DataTypes.INTEGER,
+        parentFaqQuestionID: { type: DataTypes.STRING,
             allowNull: true  
         },
         lang: {

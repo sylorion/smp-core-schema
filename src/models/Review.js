@@ -17,26 +17,21 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     }, 
-    serviceID: {
-      type: DataTypes.INTEGER,
+    serviceID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    organizationID: {
-      type: DataTypes.INTEGER,
+    organizationID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false, 
     },
-    criteriaID: {
-      type: DataTypes.INTEGER,
+    criteriaID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     rating: DataTypes.INTEGER,
     
-    commentID: {
-      type: DataTypes.INTEGER,
+    commentID: { type: DataTypes.STRING,
       allowNull: true, 
     }, 
   },

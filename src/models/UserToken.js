@@ -13,12 +13,10 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     },
-    userID: {
-      type: DataTypes.INTEGER,
+    userID: { type: DataTypes.STRING,
       allowNull: false,
     },
-    applicationID: {
-      type: DataTypes.INTEGER,
+    applicationID: { type: DataTypes.STRING,
       allowNull: true,
     },
     platform: {

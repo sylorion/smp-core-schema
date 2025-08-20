@@ -13,20 +13,16 @@ export default (db) => {
       defaultValue: () => createId(),
     }, 
     content: DataTypes.TEXT,
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false, 
     },
-    serviceID: {
-      type: DataTypes.INTEGER,
+    serviceID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    parentCommentID: {
-      type: DataTypes.INTEGER,
+    parentCommentID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    organizationID: {
-      type: DataTypes.INTEGER,
+    organizationID: { type: DataTypes.STRING,
       allowNull: true, 
     },
     feedback: DataTypes.INTEGER, 

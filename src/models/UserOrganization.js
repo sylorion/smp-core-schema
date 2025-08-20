@@ -18,20 +18,16 @@ export default (db) => {
       defaultValue: () => createId(),
     },
     legend: DataTypes.STRING(64),
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: true,
     },
-    userID: {
-      type: DataTypes.INTEGER,
+    userID: { type: DataTypes.STRING,
       allowNull: false,
     },
-    roleID: {
-      type: DataTypes.INTEGER,
+    roleID: { type: DataTypes.STRING,
       allowNull: false,
     },
-    organizationID: {
-      type: DataTypes.INTEGER,
+    organizationID: { type: DataTypes.STRING,
       allowNull: false,
     },
   },

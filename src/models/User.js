@@ -45,8 +45,7 @@ export default (db) => {
         type: DataTypes.STRING(8),
       },
 
-      profileID: {
-        type: DataTypes.INTEGER,
+      profileID: { type: DataTypes.STRING,
         allowNull: true, // Allow to associate a profile some how in the futur
       },
       userKind: {

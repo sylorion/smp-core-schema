@@ -14,8 +14,7 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     },
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false,
     },
     description: DataTypes.TEXT,
@@ -33,20 +32,16 @@ export default (db) => {
       allowNull: false,
     },
     endDate: DataTypes.DATE,
-    serviceID: {
-      type: DataTypes.INTEGER,
+    serviceID: { type: DataTypes.STRING,
       allowNull: false,
     },
-    organizationID: {
-      type: DataTypes.INTEGER,
+    organizationID: { type: DataTypes.STRING,
       allowNull: true,
     },
-    topicID: {
-      type: DataTypes.INTEGER,
+    topicID: { type: DataTypes.STRING,
       allowNull: true,
     },
-    serviceID: {
-      type: DataTypes.INTEGER,
+    serviceID: { type: DataTypes.STRING,
       allowNull: true,
     },
     tagIDs: {

@@ -14,8 +14,7 @@ export default (db) => {
       primaryKey: true,
       defaultValue:() => createId(),
     },
-    applicationID: {
-      type: DataTypes.INTEGER,
+    applicationID: { type: DataTypes.STRING,
       allowNull: false,
     },
     token: {

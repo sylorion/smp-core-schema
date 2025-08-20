@@ -17,16 +17,13 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     }, 
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false, 
     },
-    assetID: {
-      type: DataTypes.INTEGER,
+    assetID: { type: DataTypes.STRING,
       allowNull: false, 
     },
-    serviceID: {
-      type: DataTypes.INTEGER,
+    serviceID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     legend: DataTypes.STRING(64), 

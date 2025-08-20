@@ -19,8 +19,7 @@ export default (db) => {
         primaryKey: true,
         defaultValue: () => createId(),
       },
-      userID: {
-        type: DataTypes.INTEGER,
+      userID: { type: DataTypes.STRING,
         allowNull: false,
         unique: true,
       },
@@ -34,7 +33,7 @@ export default (db) => {
         type: DataTypes.ENUM(Object.values(ServicesAcceptedDevice)),
         defaultValue: ServicesAcceptedDevice.EUR,
       },
-      defaultPaymentMethodID: DataTypes.INTEGER,
+      defaultPaymentMethodID: DataTypes.STRING,
       notificationFrequency: DataTypes.STRING(32),
       showRecommendations: DataTypes.BOOLEAN,
       otherSettings: DataTypes.JSON,

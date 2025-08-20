@@ -18,12 +18,10 @@ export default (db) => {
             defaultValue: () => createId(),
             allowNull: false
         },
-        authorID: {
-            type: DataTypes.INTEGER,
+        authorID: { type: DataTypes.STRING,
             allowNull: false
         },
-        followedID: {
-            type: DataTypes.INTEGER,
+        followedID: { type: DataTypes.STRING,
             allowNull: false
         },
         followedEntity: {

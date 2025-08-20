@@ -26,12 +26,10 @@ export default (db) => {
         allowNull: true,
       },
   
-      mediaID: {
-        type: DataTypes.INTEGER,
+      mediaID: { type: DataTypes.STRING,
         allowNull: false,
       },
-      assetID: {
-        type: DataTypes.INTEGER,
+      assetID: { type: DataTypes.STRING,
         allowNull: false,
       },
       legend: {

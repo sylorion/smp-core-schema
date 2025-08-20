@@ -19,42 +19,33 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     }, 
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     title: DataTypes.STRING(128),
     description: DataTypes.TEXT,
-    mediaBannerID: {
-      type: DataTypes.INTEGER,
+    mediaBannerID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    termsAndConditionsID: {
-      type:DataTypes.INTEGER,
+    termsAndConditionsID: { type: DataTypes.STRING,
       allowNull: true, 
      },
-    parentServiceID: {
-      type:DataTypes.INTEGER,
+    parentServiceID: { type: DataTypes.STRING,
       allowNull: true, 
      },
-    tagID: {
-      type: DataTypes.INTEGER,
+    tagID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    topicID: {
-      type: DataTypes.INTEGER,
+    topicID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    organizationID: {
-      type:DataTypes.INTEGER,
+    organizationID: { type: DataTypes.STRING,
       allowNull: true, 
      },
-    locationID: {
-      type:DataTypes.INTEGER,
+    locationID: { type: DataTypes.STRING,
       allowNull: true, 
      },
-    paymentConfigID: {
-      type:DataTypes.INTEGER,
+    paymentConfigID: { type: DataTypes.STRING,
       allowNull: true, 
      },
     price: {

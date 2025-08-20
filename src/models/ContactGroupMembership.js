@@ -19,12 +19,10 @@ export default (db) => {
         type: DataTypes.STRING(255),
         allowNull: false,
       },
-      contactID: {
-        type: DataTypes.INTEGER,
+      contactID: { type: DataTypes.STRING,
         allowNull: false,
       },
-      groupID: {
-        type: DataTypes.INTEGER,
+      groupID: { type: DataTypes.STRING,
         allowNull: false,
       },
       state: {

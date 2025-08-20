@@ -19,16 +19,14 @@ export default (db) => {
       defaultValue: () => createId(),
 
     },
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false,  
     },
-    ownerID: {
-      type: DataTypes.INTEGER,
+    ownerID: { type: DataTypes.STRING,
       allowNull: true, 
     },
     orgRef: DataTypes.STRING(32),
-    sectorID: DataTypes.INTEGER,
+    sectorID: DataTypes.STRING,
     legalName: DataTypes.STRING(64),
     brand: DataTypes.STRING(32),
     sigle: DataTypes.STRING(8),
@@ -65,8 +63,8 @@ export default (db) => {
     activityEndedAt: DataTypes.DATE,
     description: DataTypes.TEXT,
     summary: DataTypes.TEXT,
-    locationID: DataTypes.INTEGER,
-    parentOrganizationID: DataTypes.INTEGER,
+    locationID: DataTypes.STRING,
+    parentOrganizationID: DataTypes.STRING,
     advancedAttributes: DataTypes.JSON, 
   },
   {

@@ -14,21 +14,18 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     }, 
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     answer: {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    topicID: {
-      type: DataTypes.INTEGER,
+    topicID: { type: DataTypes.STRING,
       allowNull: true 
     },
     // If we want to clone an answer and provide more details
-    parentFaqAnswerID: {
-      type: DataTypes.INTEGER,
+    parentFaqAnswerID: { type: DataTypes.STRING,
       allowNull: true 
     },
     lang: {

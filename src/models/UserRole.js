@@ -18,12 +18,11 @@ export default (db) => {
       defaultValue: () => createId(),
     },
     legend: DataTypes.STRING(64),
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false,
     },
-    userID: DataTypes.INTEGER,
-    roleID: DataTypes.INTEGER, 
+    userID: DataTypes.STRING,
+    roleID: DataTypes.STRING, 
   },
   {
     sequelize: db,

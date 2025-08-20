@@ -14,24 +14,19 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     }, 
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false, 
     },
-    operatorUserID: {
-      type: DataTypes.INTEGER,
+    operatorUserID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    buyerOrganizationID: {
-      type: DataTypes.INTEGER,
+    buyerOrganizationID: { type: DataTypes.STRING,
       allowNull: true, 
     },
-    sellerOrganizationID: {
-      type: DataTypes.INTEGER,
+    sellerOrganizationID: { type: DataTypes.STRING,
       allowNull: false, 
     },
-    serviceID: {
-      type: DataTypes.INTEGER,
+    serviceID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     expirationDueDate: DataTypes.DATE,
@@ -47,8 +42,7 @@ export default (db) => {
     },
       
     negociatedPrice: DataTypes.INTEGER,
-    discountID: {
-      type: DataTypes.INTEGER,
+    discountID: { type: DataTypes.STRING,
       allowNull: true, 
     },
     details: DataTypes.JSON,

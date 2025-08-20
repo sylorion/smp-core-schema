@@ -19,13 +19,11 @@ export default (db) => {
         defaultValue: () => createId(),
         allowNull: false,
       },
-      userID: {
-        type: DataTypes.INTEGER,
+      userID: { type: DataTypes.STRING,
         allowNull: false,
       },
 
-      notificationTemplateID: {
-        type: DataTypes.INTEGER,
+      notificationTemplateID: { type: DataTypes.STRING,
       },
 
       notificationType: {

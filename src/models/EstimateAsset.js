@@ -14,17 +14,14 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     }, 
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     legend: DataTypes.STRING(64),
-    assetID: {
-      type: DataTypes.INTEGER,
+    assetID: { type: DataTypes.STRING,
       allowNull: false, 
     },
-    estimateID: {
-      type: DataTypes.INTEGER,
+    estimateID: { type: DataTypes.STRING,
       allowNull: false, 
     }, 
     mandatry: {

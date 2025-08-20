@@ -19,21 +19,17 @@ export default (db) => {
         primaryKey: true,
         defaultValue: () => createId(),
       },
-      authorID: {
-        type: DataTypes.INTEGER,
+      authorID: { type: DataTypes.STRING,
         allowNull: false,
       },
-      estimateID: {
-        type: DataTypes.INTEGER,
+      estimateID: { type: DataTypes.STRING,
         allowNull: false,
       },
-      buyerOrganizationID: {
-        type: DataTypes.INTEGER,
+      buyerOrganizationID: { type: DataTypes.STRING,
         allowNull: true,
       },
 
-      sellerOrganizationID: {
-        type: DataTypes.INTEGER,
+      sellerOrganizationID: { type: DataTypes.STRING,
         allowNull: false,
       },
       thirdPartyFees: {

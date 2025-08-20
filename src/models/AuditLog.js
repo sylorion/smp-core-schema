@@ -14,8 +14,7 @@ export default (db) => {
       defaultValue: () => createId(),
     }, 
     actionType: DataTypes.STRING(255), // Replace with actual action type data type
-    userID: {
-      type: DataTypes.INTEGER, 
+    userID: { type: DataTypes.STRING, 
     },
     userIP: {
       type: DataTypes.STRING(128),
@@ -29,8 +28,7 @@ export default (db) => {
       type: DataTypes.STRING(255),
       allowNull: false,
     },
-    applicationID: {
-      type: DataTypes.INTEGER,
+    applicationID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     applicationVersion: {

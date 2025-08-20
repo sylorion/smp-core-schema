@@ -13,16 +13,14 @@ export default (db) => {
       primaryKey: true,
       defaultValue: () => createId(),
     }, 
-    authorID: {
-      type: DataTypes.INTEGER,
+    authorID: { type: DataTypes.STRING,
       allowNull: false,
     },
     officialName: {
       type: DataTypes.STRING(255),
       allowNull: false,
     },
-    developerID: {
-      type: DataTypes.INTEGER,
+    developerID: { type: DataTypes.STRING,
       allowNull: false,
     },
     authKey: {

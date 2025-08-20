@@ -18,16 +18,14 @@ export default (db) => {
       defaultValue: () => createId(),
     },
     
-    invoiceID: {
-      type: DataTypes.INTEGER,
+    invoiceID: { type: DataTypes.STRING,
       allowNull: false, 
     },
     totalAmount: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    dealMediaProofID: {
-      type: DataTypes.INTEGER,
+    dealMediaProofID: { type: DataTypes.STRING,
       allowNull: true,
     },
     transactionDateTime: {

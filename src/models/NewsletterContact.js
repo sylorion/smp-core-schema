@@ -26,8 +26,7 @@ export default (db) => {
         type: DataTypes.STRING(255),
         allowNull: false,
       },
-      userID: {
-        type: DataTypes.INTEGER,
+      userID: { type: DataTypes.STRING,
         allowNull: true, // Peut être null si le contact n'est pas lié à un utilisateur
       },
       email: {

@@ -15,24 +15,20 @@ export default (db) => {
             defaultValue: () => createId(),
             allowNull: false
         },
-        authorID: {
-            type: DataTypes.INTEGER,
+        authorID: { type: DataTypes.STRING,
             allowNull: false
         },
         order: {
             type: DataTypes.INTEGER,
             defaultValue: 0
         },
-        faqAnswerID: {
-            type: DataTypes.INTEGER,
+        faqAnswerID: { type: DataTypes.STRING,
             allowNull: false
         },
-        faqQuestionID: {
-            type: DataTypes.INTEGER,
+        faqQuestionID: { type: DataTypes.STRING,
             allowNull: false
         },
-        serviceID: {
-            type: DataTypes.INTEGER,
+        serviceID: { type: DataTypes.STRING,
             allowNull: false
         },
     },

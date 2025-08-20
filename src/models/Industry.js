@@ -17,14 +17,13 @@ export default (db) => {
         primaryKey: true,
         defaultValue: () => createId(),
       },
-      authorID: {
-        type: DataTypes.INTEGER,
+      authorID: { type: DataTypes.STRING,
         allowNull: false,
       },
       title: DataTypes.STRING(255),
       description: DataTypes.TEXT,
       level: DataTypes.INTEGER,
-      parentIndustryID: DataTypes.INTEGER,
+      parentIndustryID: DataTypes.STRING,
     },
     {
       sequelize: db,

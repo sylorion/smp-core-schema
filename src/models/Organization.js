@@ -31,15 +31,15 @@ export default (db) => {
     brand: DataTypes.STRING(32),
     sigle: DataTypes.STRING(8),
     smallLogo: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true, 
     },
     bigLogo: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true, 
     },
     banner: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true, 
     },
     oSize: {

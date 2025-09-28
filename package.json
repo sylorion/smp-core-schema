@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/sylorion/smp-core-schema#readme",
   "dependencies": {
+    "nanoid": "^5.0.0",
     "pg": "^8.11.3",
     "sequelize": "^6.37.5",
     "slugify": "^1.6.6",

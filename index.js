@@ -27,6 +27,7 @@ import ContactSource from './src/enums/ContactSource.js';
 // console.log(ObjectStatus)
 // console.log(MediaType)
 
+import modelAffiliate from './src/models/Affiliate.js';
 import modelApplication from './src/models/Application.js';
 import modelApplicationToken from './src/models/ApplicationToken.js';
 import modelAsset from './src/models/Asset.js';
@@ -80,7 +81,7 @@ import modelNewsletter from './src/models/Newsletter.js';
 
 
 export {
-    modelApplication, modelApplicationToken, modelAsset, modelAssetMedia,
+    modelAffiliate, modelApplication, modelApplicationToken, modelAsset, modelAssetMedia,
     modelAuditLog, modelComment, modelCriteria, modelEstimate,
     modelEstimateAsset, modelDiscount, modelDocumentation,
     modelFaqAnswer, modelFaqOrganization, modelFaqQuestion,
